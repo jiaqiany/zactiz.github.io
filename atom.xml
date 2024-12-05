@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zactiz.com/"/>
-  <updated>2024-11-01T08:24:25.555Z</updated>
+  <updated>2024-12-05T08:42:57.169Z</updated>
   <id>http://zactiz.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>应该是最犹豫的一次升级手机</title>
+    <link href="http://zactiz.com/2024/09/30/iphone-16/"/>
+    <id>http://zactiz.com/2024/09/30/iphone-16/</id>
+    <published>2024-09-30T14:30:30.000Z</published>
+    <updated>2024-12-05T08:42:57.169Z</updated>
+    
+    <content type="html"><![CDATA[<p>今年换手机应该是目前为止最犹豫的一次，考虑了很久，最终才决定把手上的那台 iPhone 14PM 更新成了最新的一代。</p><p>之前一直是两年更新一次的频率，轮到今年的时候，看完发布会，实在是觉得没有什么新意，几乎没有升级的摄像系统，感知不到变化的外观，大差不差的性能，不禁让我感觉到苹果迟早要完。</p><p>对比15基本上没什么升级，而对比我手上这台14，还是能讲得出几个升级点：</p><ul><li>接口换成了 Type-C，这也是我觉得最重要的部分</li><li>长焦变成了5倍潜望镜，但失去了3倍镜，这个升级算是有好有坏</li><li>钛合金边框确实减轻了重量，提升了握持手感，这个也算是个有效升级</li><li>提升续航和电池容量，但保证了一天一充，相比之前已经缩水了的电池，在续航这一方面感知明显</li><li>Apple Intelligence，可惜目前还没体验上</li></ul><p>如果说实在要找一个换手机的理由，可能是原来那个14电池缩水严重，如果去官方换一个电池也不算便宜，不如再加点换成新款的。</p><p>总觉得这些年换手机已经没有了以前换手机时的新鲜感，当年换到 iPhone 6 和第一次用上全面屏的时候，总觉得哪哪都有意思，新鲜感能持续一周，即便是上一台 iPhone 14PM 也因为灵动岛的设计，新鲜感也持续了许久。</p><p>不过令人兴奋的是，目前为止身边所有的设备终于都换成了 Type-C 供电（除了 Apple Watch），所以现在出门真的只需要带一条线了（或者再加一条手表充电线），就算是出远门，也只需要带两条 C2C 的线（再加一条手表充电线）就可以满足所有需要。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="关于科技" scheme="http://zactiz.com/categories/technology/"/>
+    
+    
+      <category term="科技" scheme="http://zactiz.com/tags/%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
   
   <entry>
     <title>甲辰年夏至</title>
@@ -566,35 +595,6 @@
     
     
       <category term="生活" scheme="http://zactiz.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>壬寅年九月小结</title>
-    <link href="http://zactiz.com/2022/10/15/september-2022-summary/"/>
-    <id>http://zactiz.com/2022/10/15/september-2022-summary/</id>
-    <published>2022-10-15T02:00:00.000Z</published>
-    <updated>2022-10-25T14:29:28.105Z</updated>
-    
-    <content type="html"><![CDATA[<p>九月无疑是快乐的，这个月的开始是中秋假期，结束便是国庆假期，于是一直持续在假期的放松心情中。</p><p>中秋本来安排了一趟飞成都，然后在川西玩一趟的旅行，没想到四川先是限电，然后再是地震影响了前往川西的公路，最后更绝的是整个成都封城。本来想的是即便到时候去不了川西了，那我还可以中秋假期在成都玩几天，没想到最后只能彻底打消了念头，只能怪没有缘分，把机票草草退了。于是四川的行程又要被拖上一阵子才能实现了。取而代之的是就近的苏州行，在太湖上举杯邀明月，也算是一趟有意义的旅程。</p><p>九月底还因为要赶紧花掉房券，去了趟杭州，也算是周末度假。这趟去杭州也十分轻松，吃吃喝喝，走走逛逛，其实就和在上海度过一个周末也差不多。国庆没有安排什么旅行，考虑到这时候出去不仅成本高，而且到处都人挤人。于是计划在调休的那周请两天假错峰出行。</p><p>这个月一过就是今年的最后一个季度，工作会忙很多趁着这段时间又是假期又是空档期的，赶紧该玩玩，该出行出行。最近其实整个行业包括经济形势都不好，所以正如我老板对我说的，“这时候做好自己该做的别留下话柄就可以了”。只能祝自己好运，也祝各位都好运。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="关于自己" scheme="http://zactiz.com/categories/me/"/>
-    
-    
-      <category term="总结" scheme="http://zactiz.com/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
