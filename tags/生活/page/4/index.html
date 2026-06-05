@@ -107,7 +107,7 @@
       }
       toggleGiscusTheme();
     }
-    $("#toggle-dark").click(toggleDark);
+    $("#theme-toggle, #toggle-dark").click(toggleDark);
 
     // listen dark mode change
     window
@@ -136,1603 +136,389 @@
     bg-[var(--c-0)]
     text-[var(--c-80)]
   ">
-  <!-- The navigation bar -->
-<header class="
-    flex flex-row items-center
-    w-full
-    pr-4
-    z-10
-    border-b-[1px]
-    border-b-[var(--c-border)]
-    dark:bg-[var(--c-0)]
-    dark:border-b-[var(--c-0)]
-    gap-2
-    h-[var(--h-header)]
-    text-[var(--c-80)]
-">
-  <!-- Left part -->
-  <div class="overflow-hidden h-full flex flex-row items-center">
-    <!-- Site Title on the top left -->
-    <a href="/" class="
-            whitespace-nowrap
-            text-2xl
-            text-[var(--c-theme)]
-            hover:text-[var(--c-theme)]
-            pl-4
-            font-black
-            bg-gradient-to-r from-cyan-500
-            to-blue-500 bg-clip-text text-transparent
-          ">
-      旅·人
-    </a>
-  </div>
-  <!-- Div for pushing items to both sides -->
-  <div class="flex-1"></div>
-  <!-- Right part -->
-  <div class="flex flex-row items-center z-20 h-full">
-    <!-- Page links -->
-    <div class="hidden sm:flex flex-row h-full">
-      
-        
-        
-          
-          
-        
-      <a href="/./" class="
-                        flex flex-row items-center
-                        gap-1
-                        hover:underline
-                        hover:bg-[var(--c-20)]
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        px-2
-                        py-1
-                        my-1
-                        rounded-lg
-                        group
-                        whitespace-nowrap
-                    ">
-        
-        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:home-2-fill" width="22">
-        </iconify-icon>
-        
-        
-        <p>首页</p>
-        
-      </a>
-      
-        
-        
-          
-          
-        
-      <a href="/./archives" class="
-                        flex flex-row items-center
-                        gap-1
-                        hover:underline
-                        hover:bg-[var(--c-20)]
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        px-2
-                        py-1
-                        my-1
-                        rounded-lg
-                        group
-                        whitespace-nowrap
-                    ">
-        
-        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:inbox-fill" width="22">
-        </iconify-icon>
-        
-        
-        <p>归档</p>
-        
-      </a>
-      
-        
-        
-          
-          
-        
-      <a href="/./about" class="
-                        flex flex-row items-center
-                        gap-1
-                        hover:underline
-                        hover:bg-[var(--c-20)]
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        px-2
-                        py-1
-                        my-1
-                        rounded-lg
-                        group
-                        whitespace-nowrap
-                    ">
-        
-        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:user-info-fill" width="22">
-        </iconify-icon>
-        
-        
-        <p>关于</p>
-        
-      </a>
-      
-        
-        
-          
-          
-        
-      <a href="/./categories" class="
-                        flex flex-row items-center
-                        gap-1
-                        hover:underline
-                        hover:bg-[var(--c-20)]
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        px-2
-                        py-1
-                        my-1
-                        rounded-lg
-                        group
-                        whitespace-nowrap
-                    ">
-        
-        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:classify-2-fill" width="22">
-        </iconify-icon>
-        
-        
-        <p>分类</p>
-        
-      </a>
-      
-        
-        
-          
-          
-        
-      <a href="/./tags" class="
-                        flex flex-row items-center
-                        gap-1
-                        hover:underline
-                        hover:bg-[var(--c-20)]
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        px-2
-                        py-1
-                        my-1
-                        rounded-lg
-                        group
-                        whitespace-nowrap
-                    ">
-        
-        <iconify-icon class="group-hover:scale-125 transition-transform" icon="mingcute:tag-fill" width="22">
-        </iconify-icon>
-        
-        
-        <p>标签</p>
-        
-      </a>
-      
+  <header class="site-header">
+  <nav class="nav">
+    <div class="logo">
+      <a href="/" title="旅·人">旅·人</a>
     </div>
-    <!-- Icons on the right -->
-    <div class="flex flex-row items-center justify-center">
-
-      <!-- TODO: Add search icon here -->
-
-      <!-- Dark/light toggle icon -->
-      <a class="flex group p-1" title="toggle theme" id="toggle-dark">
-        <iconify-icon class="transition-transform
-                    group-hover:rotate-[45deg]
-                    group-hover:scale-125
-                    group-hover:text-[var(--c-theme)]" width="24" id="theme-icon">
-        </iconify-icon>
-      </a>
-      <!-- Icon for dropout menu on small screens -->
-      <div class="flex flex-row items-center justify-center p-1 sm:hidden">
-        <a class="w-6 h-6" aria-hidden="true" id="open-menu">
-          <iconify-icon width="24" icon="mingcute:menu-fill" class="transition-transform hover:scale-125 hover:rotate-[5deg]">
-          </iconify-icon>
-        </a>
-        <a class="w-6 h-6 hidden" aria-hidden="true" id="close-menu">
-          <iconify-icon width="24" icon="mingcute:close-circle-fill" class="transition-transform hover:scale-125 hover:rotate-[80deg]">
-          </iconify-icon>
-        </a>
-      </div>
+    <div class="nav-right">
+      <ul id="menu">
+        
+          
+          
+            
+            
+          
+          
+          <li>
+            <a href="/" title="首页">
+              <span class="">首页</span>
+            </a>
+          </li>
+        
+          
+          
+            
+            
+          
+          
+          <li>
+            <a href="/archives" title="归档">
+              <span class="">归档</span>
+            </a>
+          </li>
+        
+          
+          
+            
+            
+          
+          
+          <li>
+            <a href="/about" title="关于">
+              <span class="">关于</span>
+            </a>
+          </li>
+        
+          
+          
+            
+            
+          
+          
+          <li>
+            <a href="/categories" title="分类">
+              <span class="">分类</span>
+            </a>
+          </li>
+        
+          
+          
+            
+            
+          
+          
+          <li>
+            <a href="/tags" title="标签">
+              <span class="active">标签</span>
+            </a>
+          </li>
+        
+      </ul>
+      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
+        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
+      </button>
     </div>
-  </div>
+  </nav>
 </header>
 
-<!-- Dropdown menu on small screens -->
-<div id="menu-panel" class="
-        h-0
-        overflow-hidden
-        sm:hidden
-        w-full
-        z-10
-        rounded
-    ">
-  <div id="menu-content" class="
-        flex
-        flex-col
-        font-bold
-        text-xl
-        border-b-[1px]
-        relative
-        z-20
-        border-[var(--c-sep)]
-        px-2
-        py-2
-        -translate-y-full
-        transition-transform
-        duration-200
-        ">
+<div id="menu-panel" class="mobile-menu-panel sm:hidden">
+  <div id="menu-content" class="mobile-menu-content">
     
+      
+      
+        <a href="/">首页</a>
+      
     
+      
+      
+        <a href="/archives">归档</a>
+      
     
-    <a href="/./" class="
-                flex flex-row items-center
-                gap-2
-                h-12
-                hover:underline
-                hover:bg-[var(--c-20)]
-                px-3
-                py-1
-                rounded-lg
-            ">
-      <iconify-icon icon="mingcute:home-2-fill" width="22">
-      </iconify-icon>
-      <p>
-        首页
-      </p>
-    </a>
+      
+      
+        <a href="/about">关于</a>
+      
     
+      
+      
+        <a href="/categories">分类</a>
+      
     
-    
-    
-    <a href="/./archives" class="
-                flex flex-row items-center
-                gap-2
-                h-12
-                hover:underline
-                hover:bg-[var(--c-20)]
-                px-3
-                py-1
-                rounded-lg
-            ">
-      <iconify-icon icon="mingcute:inbox-fill" width="22">
-      </iconify-icon>
-      <p>
-        归档
-      </p>
-    </a>
-    
-    
-    
-    
-    <a href="/./about" class="
-                flex flex-row items-center
-                gap-2
-                h-12
-                hover:underline
-                hover:bg-[var(--c-20)]
-                px-3
-                py-1
-                rounded-lg
-            ">
-      <iconify-icon icon="mingcute:user-info-fill" width="22">
-      </iconify-icon>
-      <p>
-        关于
-      </p>
-    </a>
-    
-    
-    
-    
-    <a href="/./categories" class="
-                flex flex-row items-center
-                gap-2
-                h-12
-                hover:underline
-                hover:bg-[var(--c-20)]
-                px-3
-                py-1
-                rounded-lg
-            ">
-      <iconify-icon icon="mingcute:classify-2-fill" width="22">
-      </iconify-icon>
-      <p>
-        分类
-      </p>
-    </a>
-    
-    
-    
-    
-    <a href="/./tags" class="
-                flex flex-row items-center
-                gap-2
-                h-12
-                hover:underline
-                hover:bg-[var(--c-20)]
-                px-3
-                py-1
-                rounded-lg
-            ">
-      <iconify-icon icon="mingcute:tag-fill" width="22">
-      </iconify-icon>
-      <p>
-        标签
-      </p>
-    </a>
-    
+      
+      
+        <a href="/tags">标签</a>
+      
     
   </div>
 </div>
 
+  <main class="main">
+    <div class="container">
+  
+    <header class="page-header">
+  <div class="breadcrumbs">
+    
+      
+        
+        <a href="/">首页</a>
+      
+        <span class="crumb-separator">/</span>
+        <a href="/tags/">标签</a>
+      
+    
+  </div>
+  
+    <h1>生活</h1>
+  
+</header>
 
-  <main>
-    
-    <!-- 显示某个tag的所有post -->
-    <div class="flex flex-wrap justify-center items-center">
-        <div class="
-            tag
-            mt-6
-            text-lg
-            rounded-full
-            px-3
-            py-1
-            border-2
-            border-[var(--c-theme)]
-            text-[var(--c-theme)]
-            bg-[var(--c-0)]
-            dark:bg-[var(--c-0)]
-            dark:drop-shadow-none
-            ">
-            生活
-        </div>
-    </div>
-
-<section class="px-2 py-8 max-w-prose mx-auto gap-4 grid grid-cols-1">
   
-  <!-- Sort posts by date -->
+  <div class="post-list">
+  
   
   
     
-    <!-- Large text showing the year in the background -->
     
-      <div class="relative pointer-events-none h-[30px] -z-50">
-        <div class="absolute -top-6 w-[100%]">
-          <p class="
-            text-clip
-            overflow-hidden
-            text-9xl
-            font-extrabold
-            text-[var(--c-theme)]
-            opacity-10
-            dark:opacity-20
-            -translate-x-3
-            ">
-            2020
-          </p>
-        </div>
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">游泳随身听</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>最近入手了一个游泳耳机Sony WS413，不过严格意义上说它属于索尼的Walkman系列，是一款耳机形状、并且具有IP68防水防尘等级的音乐播放器。（完全没有带货的意思）
+随身听自带4G内存，这让我想起了初中时爱不释手的iPod系列，于是我开始到处在我的电脑里搜刮音频拖进这个设备里，到最后也只用了一半的内存，不过好在游泳的时候听一个小时肯定绰绰有余了。
+关于这次购物的原因，前不久办了一家芝加哥知名连锁健身房的会员以后，便有了可以随时下楼游泳的机会，于是琢磨着入手了这么一款播放器来提升我的游泳体验。
+没想到因为疫情的关系，健身房至少关闭至四月，今天收到快递时我有些哭笑不得，看来这几天也只能在洗...</p>
       </div>
     
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2020/03/17/swimming-music-player/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        游泳随身听
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2020-03-17
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    291 words, 1 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/technology/">
-                            关于科技
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-      <a href="/tags/%E7%A7%91%E6%8A%80/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        科技
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
+    <footer class="entry-footer">
+      <span>2020-03-17</span>&nbsp;·&nbsp;1 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2020/03/17/swimming-music-player/" aria-label="阅读文章：游泳随身听"></a>
+</article>
 
-    </div>
   
     
-    <!-- Large text showing the year in the background -->
     
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2020/02/24/death-in-chicago/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        芝加哥之死
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2020-02-24
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    580 words, 1 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/literature/">
-                            关于文学
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
+<article class="post-entry">
   
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">芝加哥之死</h2>
+    </header>
     
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
+      <div class="entry-content no-mathjax">
+        <p>“四月是最残酷的季节，使死寂的土原爆放出丁香，掺杂着记忆与欲念，以春雨撩拨那萎顿的树根。冬天替我们保温，把大地盖上一层令人忘忧的白雪。”—《荒原》艾略特
 
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-      <div class="relative pointer-events-none h-[30px] -z-50">
-        <div class="absolute -top-6 w-[100%]">
-          <p class="
-            text-clip
-            overflow-hidden
-            text-9xl
-            font-extrabold
-            text-[var(--c-theme)]
-            opacity-10
-            dark:opacity-20
-            -translate-x-3
-            ">
-            2019
-          </p>
-        </div>
+芝加哥的夜晚透着凉意，他刚离开那震耳欲聋的五彩世界并朝着河对岸走着，逐渐清醒过来。
+“愿意光临寒舍吗？”他身边那个第一次谋面的人如此说道。
+那人身上淡淡的香水味被揉进芝加哥河上轻拂的夜风中，一阵一阵飘过他的鼻腔，带着清凉被一股脑吸进身体里。他佯装出了醉了的样子与神情，眼神从那人身上飘向河边不曾熄灯的楼宇，他瞳孔里那大厦的一格格璀璨灯光与水中泛着的粼粼金光交织在了一起，他眯了眯眼，眼皮有些沉重却丝毫没有睡意。
+“你叫什么？”凌晨三点的街道变得...</p>
       </div>
     
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/12/17/5am-chicago-subway/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        凌晨五点的芝加哥地铁
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-12-17
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    616 words, 2 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/world/">
-                            关于世界
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
+    <footer class="entry-footer">
+      <span>2020-02-24</span>&nbsp;·&nbsp;1 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2020/02/24/death-in-chicago/" aria-label="阅读文章：芝加哥之死"></a>
+</article>
 
-    </div>
   
     
-    <!-- Large text showing the year in the background -->
     
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/11/21/untitled-11-21/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        无题
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-11-21
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2023-08-06
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    344 words, 1 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/emotion/">
-                            关于感情
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
+<article class="post-entry">
   
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">凌晨五点的芝加哥地铁</h2>
+    </header>
     
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
-
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/10/02/fog-in-windy-city/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        风城迷雾
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-10-02
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    625 words, 2 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/me/">
-                            关于自己
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
-
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/08/06/stolen-dream/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        被偷走了的美梦
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-08-06
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    650 words, 2 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/me/">
-                            关于自己
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E6%A2%A6%E5%A2%83/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        梦境
-      </a>
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
-
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/04/11/passing-happiness/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        路过幸福
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-04-11
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    524 words, 1 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/emotion/">
-                            关于感情
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-      <a href="/tags/%E7%88%B1%E4%BA%BA/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        爱人
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
-
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/03/28/now/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        苟且
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-03-28
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2021-09-03
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    555 words, 1 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/me/">
-                            关于自己
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-      <a href="/tags/%E6%98%A5%E5%A4%A9/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        春天
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
-
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2019/01/10/the-end-of-2018/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        你如期而至
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2019-01-10
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2026-02-20
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    1.4k words, 4 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/me/">
-                            关于自己
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
-    
-      <a href="/tags/%E5%86%AC%E5%A4%A9/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        冬天
-      </a>
-    
-  
-</div>
-            
-        </div>
-</div>
-
-    </div>
-  
-    
-    <!-- Large text showing the year in the background -->
-    
-      <div class="relative pointer-events-none h-[30px] -z-50">
-        <div class="absolute -top-6 w-[100%]">
-          <p class="
-            text-clip
-            overflow-hidden
-            text-9xl
-            font-extrabold
-            text-[var(--c-theme)]
-            opacity-10
-            dark:opacity-20
-            -translate-x-3
-            ">
-            2018
-          </p>
-        </div>
+      <div class="entry-content no-mathjax">
+        <p>整个芝加哥只有一条地铁是真正全天运营的，这天我第一次见到凌晨五点的芝加哥地铁。
+穿着薄薄外套的醉酒男性在我的这节车厢里晃荡，他没有坐下，而是来回地踱步着。我不是很愿意去看他，一方面自己的的确确会感到厌恶，另一方面是怕对视上的眼神给自己带来不必要的麻烦。车厢里笼罩着难以消散的大麻味，我相信在下个月这个城市大麻合法化以后，这种情况只会愈演愈烈罢了。他对面的中年男子显得疲惫不堪，不知是不是因为他一晚上都在这辆地铁上来来回回，暖和的车厢可比公园躺椅舒适得多。
+我带上了帽子和耳机，它们都能给我安全感，我换了一个稍微远一点的位置，并且是一个一眼能看遍整个车厢的地方。正值十二月，这个时候是一天最冷的，天也还...</p>
       </div>
     
-    <!-- The post -->
-    <div class="w-full">
-      <!-- One post item in a list -->
-<div class="
-    post-container
-    px-2 py-2
-    flex flex-col gap-3">
-    <div class="flex flex-row items-center gap-4">
-        
-            <div class="flex flex-col gap-1">
-                <!-- Post title -->
-                <a href="/2018/10/25/what-i-am-think/">
-                    <h2 class="
-                        text-[var(--c-80)]
-                        font-bold
-                        text-xl
-                        hover:text-[var(--c-theme)]
-                        transition-all
-                        hover:underline">
-                        当我跑步时我在想什么
-                    </h2>
-                </a>
-            <!-- Post excerpt -->
-            
-            </div>
-        </div>
-        <!-- Post Statistics -->
-        <div class="flex flex-wrap items-center gap-x-2 text-sm
-            text-[var(--c-70)]">
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:add-circle-fill"></iconify-icon>
-                <time class="w-max">
-                    2018-10-25
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:refresh-3-fill"></iconify-icon>
-                <time class="w-max">
-                    2023-08-06
-                </time>
-            </span>
-            <span class="flex flex-row items-center gap-1 group">
-                <iconify-icon width="16"
-                    icon="mingcute:book-2-fill"></iconify-icon>
-                <p class="w-max">
-                    1.1k words, 3 min
-                </p>
-            </span>
-            <!-- Categories -->
-            <span class="flex flex-row items-center gap-1 group">
-                
-                    <iconify-icon class="
-                            group-hover:scale-125
-                            transition-transform
-                            group-hover:text-[var(--c-theme)]
-                        "
-                        width="16"
-                        icon="mingcute:classify-2-fill" class="mr-0">
-                    </iconify-icon>
-                    
-                        <a class="underline underline-offset-2"
-                            href="/categories/me/">
-                            关于自己
-                        </a>
-                    
-                
-            </span>
-        </div>
-        <!-- Tags -->
-        <div>
-            
-                
-<div class="flex flex-wrap gap-1">
+    <footer class="entry-footer">
+      <span>2019-12-17</span>&nbsp;·&nbsp;2 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/12/17/5am-chicago-subway/" aria-label="阅读文章：凌晨五点的芝加哥地铁"></a>
+</article>
+
   
     
-      <a href="/tags/%E7%94%9F%E6%B4%BB/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        生活
-      </a>
     
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">无题</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>脑海里一团浆糊般，我不知道这几个小时自己做了什么事，只希望它赶紧过去。
+我也不知道这样奇怪的感觉上一次出现是什么时候了，也许这是一时兴起，三分钟热度，也许是新鲜感所带来的一点点欣喜和爱慕。
+我开始担心对方是不是认真，或者这一切是不是一个巨大的谎言。我恐慌、彷徨，我变得有点神经敏感，我担心这些会是没有结局的开始，更担心这是即将消散的烟云。
+为什么这个时候有这样一个人带着他的精彩故事和有趣经历出现，让我深陷难以抉择的漩涡里。我害怕自己做错选择，使得最后一切都如同梦境般随着一阵粉红色的烟便消散得毫无踪迹。我害怕这样的开始太真实太美妙，以至于我开始质疑是否还有什么令我更开心的事情，如果这样的话，一切都...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2019-11-21</span>&nbsp;·&nbsp;1 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/11/21/untitled-11-21/" aria-label="阅读文章：无题"></a>
+</article>
+
+  
+    
+    
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">风城迷雾</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>当风城没有了风，大雾便吞噬了这里，让来往的人们陷在望不到边际的虚无里。
+​临湖的芝加哥常会在早晨的时候被大雾笼罩，像悄悄来临的冬季，当人们还没察觉它的到来就已经置身于其中了，许久都无法散去。
+我在这样一个清晨醒来，窗外白茫茫的模糊一片，任何人都会在此刻失去起床的动力，我便关掉闹钟，决定再次睡去。
+眼看快要到下午，我赶紧从床上离开。原本计划在上午的运动时间也被一并夺取，这让我陷入了深深的自责当中。我尽力不要去想太多，煮上原本计划着当作早餐的食物，像往常那样开始这一天。
+和同事约了两点见面，现在还算早，我决定洗个澡收拾一下再出门。热水拍在脸上，顺着身体流到脚下，最后消失在看不到的漆黑下水口里，我们...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2019-10-02</span>&nbsp;·&nbsp;2 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/10/02/fog-in-windy-city/" aria-label="阅读文章：风城迷雾"></a>
+</article>
+
+  
+    
+    
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">被偷走了的美梦</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>在这座似乎不会入睡的城市里，你是不是也和我一样坐在属于自己的角落，编织着属于自己的故事。
+我可能永远也不会在自己房间里放时钟，因为秒针的声音让夜晚变得更加漫长。
+小时候的床尾前有一个柜子，在柜子上有一个小小的时钟，体积虽不大，却能在关灯以后发出让人挥之不去的滴嗒声，阴影可能就是那个时候造成的。我记得最早的时候是八点准时关灯，好像儿童台的节目也在那个时候结束。然后在小学某一年，睡觉时间改成了九点，无论是在家里，还是在学校里似乎都是这样。
+以前住校的时候，关了灯以后也时常久久不能入睡。隔壁同学的呼吸声，窗外的虫鸣，还有远处传来的声响，像是古老的呢喃，清晰地在脑中盘旋，偷走了时光，偷走了美梦。后来到...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2019-08-06</span>&nbsp;·&nbsp;2 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/08/06/stolen-dream/" aria-label="阅读文章：被偷走了的美梦"></a>
+</article>
+
+  
+    
+    
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">路过幸福</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>没有睡意的夜晚，写点东西似乎再适合不过了。
+耳边不断传来风拍打玻璃的声音，朝那边望去，对面的楼宇里，仅剩几扇窗透出亮光；这个夜晚，他们是不是和我一样也因为一些烦杂的事情迟迟没有入睡。
+耳边朴树的歌格外悦耳……
+
+”这是一个旅途，一个叫做命运的茫茫旅途，我们偶然相遇，然后离去，在这条永远不归的路……”
+
+有这么一个故事我给周围的人讲过。
+首先是背景简介，从我记事起，我的亲生父母就走到了婚姻的尽头，然后在这茫茫十几年将近二十年里我母亲就一直没有再婚。前段时间她有了一位相好的男朋友，对方的孩子和我同岁。出于各种缘由，母亲的男朋友知道了他的孩子也是一名同性恋并表示没办法接受。没办法，他的孩子来找我母亲...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2019-04-11</span>&nbsp;·&nbsp;1 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/04/11/passing-happiness/" aria-label="阅读文章：路过幸福"></a>
+</article>
+
+  
+    
+    
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">苟且</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>春风迎面而来，感觉不到寒冷，我便清楚地意识到这个漫长的冬天似乎已经远去了。这是一年当中最舒适的时候，周围那生机勃勃的样子，有谁不会觉得欣喜呢。
+我开始注意起饮食和睡眠，母亲时常叮嘱的早睡早起似乎也有它的道理。我开始听一些适合这个季节听的歌，睡前也不需要放着旋律温柔的歌曲才能顺利入睡，我翻开了去年入冬前看到一半的书，也开始追起了那些热门的剧集。于是，睡前的时光变得短暂也美好，似乎变成了一天中最放松的时刻。
+如果在上海，这个季节的世纪公园应该到处都是放风筝的人，也不知道为什么，人们就喜欢在这个季节里扯着风筝线，抬着头看一下午。不知道现在还是不是如此。
+在今年目前为止最温暖的几天里，这个城市里仿佛多...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2019-03-28</span>&nbsp;·&nbsp;1 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/03/28/now/" aria-label="阅读文章：苟且"></a>
+</article>
+
+  
+    
+    
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">你如期而至</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>1.10我感觉距离上次更新已经过去了很久，翻了翻却发现仅仅三周而已。与其说时间慢了下来，不如说是机械式重复的生活容易让人混乱在纷繁的时间里。
+最近这里暖和得不像话，这座城市一点都没有它应有的样子，每天充沛的阳光容易让人迷失，就像习惯了温室的盆栽，早已失去了自己。
+熙熙攘攘地十字路口，多少人奔波着，我不知道他们将回到哪里，我也不知道他们是否已经迷失在这一座座璀璨的楼宇里。不知是因为刚亮起的路灯还是落日的余晖，来往的人身上都披着一抹金黄，无论衣着样貌如何他们均是如此。转过几个街角，天空几乎寻不着白天的痕迹了，身边的人也渐渐少了，他们回到了一个暂时属于他们的地方并做着属于他们的事情；这里仿佛是一座巨...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2019-01-10</span>&nbsp;·&nbsp;4 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2019/01/10/the-end-of-2018/" aria-label="阅读文章：你如期而至"></a>
+</article>
+
+  
+    
+    
+<article class="post-entry">
+  
+  <div class="entry-content-container">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">当我跑步时我在想什么</h2>
+    </header>
+    
+      <div class="entry-content no-mathjax">
+        <p>不知道什么时候开始，已经不习惯在室外跑步了。一来一年大多数时候，天气没有那么适合在马路边跑；二来的的确确下楼找一台跑步机是一件十分省时省力的事情，让我再也找不到理由逃避。
+不像在室外跑步时可以尽情欣赏路边的风景和来往的人群，在健身房里周围冷冰冰的机械无时无刻不在宣告，这里只是个代替品而已。如果此时能想点什么那一定是很有趣的事情。
+有时候想着如果自己从事和艺术相关的，便可以在跑步时构思那些没有完成的设计或者作品，换种方式想，那就是在工作之余便就可以健身，岂不是一件美妙的事情。
+其实最近可以想的事情的确不少，工作、论文、甚至是搬家，但是无论哪件事想起来都毫无思绪也不愿意想。也许这个时候就是这样，烦...</p>
+      </div>
+    
+    <footer class="entry-footer">
+      <span>2018-10-25</span>&nbsp;·&nbsp;3 分钟
+    </footer>
+  </div>
+  <a class="entry-link" href="/2018/10/25/what-i-am-think/" aria-label="阅读文章：当我跑步时我在想什么"></a>
+</article>
+
   
 </div>
-            
-        </div>
-</div>
 
-    </div>
-  
-</section>
-
-
-<div class="border-t border-[--c-40]">
+  <div class="border-t border-[--c-40]">
 
   <!-- <nav class="pagination"> -->
   <div class="flex flex-row justify-center px-24 max-w-prose mx-auto py-4">
@@ -1761,6 +547,7 @@
   
 </div>
 
+</div>
 
   </main>
   <footer class="flex flex-col mt-18 mb-12 items-center
