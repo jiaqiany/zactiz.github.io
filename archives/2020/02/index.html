@@ -1,541 +1,497 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    归档: 2020/2 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>归档: 2020/2 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article class="articles">
+    
+    
+    <h1 class="page-type-title">2020/2</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
     </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="active">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/02/24/death-in-chicago/" class="archive-article-date">
+  <time datetime="2020-02-24T15:28:33.000Z" itemprop="datePublished">02/24</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/02/24/death-in-chicago/"
+    >芝加哥之死</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/02/21/the-parasite/" class="archive-article-date">
+  <time datetime="2020-02-20T18:48:20.000Z" itemprop="datePublished">02/21</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/02/21/the-parasite/"
+    >寄生虫与无力感</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/02/18/tuesday-morning/" class="archive-article-date">
+  <time datetime="2020-02-18T03:34:02.000Z" itemprop="datePublished">02/18</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/02/18/tuesday-morning/"
+    >周二早晨</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/02/08/note-of-yuanxiao/" class="archive-article-date">
+  <time datetime="2020-02-07T17:30:52.000Z" itemprop="datePublished">02/08</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/02/08/note-of-yuanxiao/"
+    >元宵节小记</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/02/06/brave-people/" class="archive-article-date">
+  <time datetime="2020-02-06T05:45:32.000Z" itemprop="datePublished">02/06</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/02/06/brave-people/"
+    >勇敢的人</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/02/02/january-summery/" class="archive-article-date">
+  <time datetime="2020-02-02T10:55:22.000Z" itemprop="datePublished">02/02</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/02/02/january-summery/"
+    >一月小结</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+      
     </div>
-  </nav>
-</header>
-
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
-    
-      
-      
-        <a href="/">首页</a>
-      
-    
-      
-      
-        <a href="/archives">归档</a>
-      
-    
-      
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
-    
-  </div>
-</div>
-
-  <main class="main">
-    <div class="container">
-  
-    <header class="page-header">
-  <div class="breadcrumbs">
-    
-      <a href="/">首页</a>
-    
   </div>
   
-    <h1>归档</h1>
   
-</header>
 
   
-  <div class="post-list">
-  
-  
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">芝加哥之死</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>“四月是最残酷的季节，使死寂的土原爆放出丁香，掺杂着记忆与欲念，以春雨撩拨那萎顿的树根。冬天替我们保温，把大地盖上一层令人忘忧的白雪。”—《荒原》艾略特
-
-芝加哥的夜晚透着凉意，他刚离开那震耳欲聋的五彩世界并朝着河对岸走着，逐渐清醒过来。
-“愿意光临寒舍吗？”他身边那个第一次谋面的人如此说道。
-那人身上淡淡的香水味被揉进芝加哥河上轻拂的夜风中，一阵一阵飘过他的鼻腔，带着清凉被一股脑吸进身体里。他佯装出了醉了的样子与神情，眼神从那人身上飘向河边不曾熄灯的楼宇，他瞳孔里那大厦的一格格璀璨灯光与水中泛着的粼粼金光交织在了一起，他眯了眯眼，眼皮有些沉重却丝毫没有睡意。
-“你叫什么？”凌晨三点的街道变得...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-02-24</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/02/24/death-in-chicago/" aria-label="阅读文章：芝加哥之死"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">寄生虫与无力感</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>很早之前我就关注了《寄生虫》，最早看到这部电影是因为它一举拿下了金棕榈奖，接着我便在Youtube上看完了这部电影的剧情解析。本身故事节奏明快，事件连接巧妙且合理却不失戏剧性，这样的剧本已经足够出彩。
-前不久的奥斯卡，这部电影又再接再厉斩获了今年的最佳影片，于是我决定把整部电影完整地再看一遍。看罢便产生了想探讨一下的念头，于是就有个这篇肤浅又不成熟的“观后感”。
-剧情涉及到剧透我就不赘述了，接下来的部分和电影剧情也没有直接联系。
-整部电影裹着喜剧的外衣，试图掩饰它惊悚又讽刺的内核，说它是一个悲剧，有些过于表面。看完并不会让我感到难过或是抑郁，反倒让我有种深深的无力感，我做不了什么也改变不了什么...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-02-21</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/02/21/the-parasite/" aria-label="阅读文章：寄生虫与无力感"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">周二早晨</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>冬天的湖水静谧而又深沉，它透着寒气的样子警告着靠近它的人：再近一步你将会被这刺骨的湖水吞没，再无挣扎的动力了。
-走在冬天的密歇根湖边，便可以体会寒风带来的恶意，冻僵的手指和沉重的脚步似乎是此时逃不掉的宿命。
-就像无数文学作品里讽刺的那样，这里的人被漫长的冬天不断侵蚀着，并依旧不断期待着春天的来临。
-春天理应已经到来，但一场场接踵而至的大雪和每日低至冰点的温度把这个念头深深地埋了起来。
-于是我安逸地守在充斥着暖气的房间里，特地把家里的灯调整成了舒适的暖色调，我倚在柔软的沙发里，深陷其中。
-我不愿意动身站起，更不愿意穿上厚重的棉衣离开这明亮又温暖的地方；窗外的雪肆意地狂舞，阴沉沉的天空仿佛把阳光永...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-02-18</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/02/18/tuesday-morning/" aria-label="阅读文章：周二早晨"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">元宵节小记</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>去年这时候，我清楚地记得我在吐槽我朋友，“吃花生馅汤圆简直是异端”，我口中嚼着芝麻馅汤圆说道。
-小时候在宁波，奶奶会在家里包汤圆，我就在那边负责把皮和陷（必须是芝麻馅）搓圆。刚包好的汤圆洁白剔透，但也黏糊糊的，得放在浸湿了的纱布上，不然容易粘在容器里。我也不一定非得等到元宵节才吃，这算是日常的点心。煮汤圆的汤得放上酒酿和桂花糖，那才算得上是地地道道的宁波汤圆。
-那时元宵节总伴随着开学，一碗汤圆以后，寒假似乎就结束了，仿佛新的一年到此时才正式拉开序幕。
-高中在国内的最后一次元宵节，那天恰好是周末，我妈给我煮了碗汤圆。不过她至少在我那碗里放了十二颗，可想而知我没有吃完它，我把剩下的端到厨房，就没有...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-02-08</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/02/08/note-of-yuanxiao/" aria-label="阅读文章：元宵节小记"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">勇敢的人</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>又忍著失望的不解的痛恨的​又只用空瓶把今天砸碎然後又哭著對離開了自己的影子道歉別氣了沒有誰再跟你作對別哭了沒有誰會心碎沒有勇敢的人勇敢的人
-賣光了一切 你的肝和你的肺他們扔了你的世界 去成為更好的人類那廉價的眼淚就別掛在嘴邊什麼也沒改變 什麼也不改變
-請別舉起手槍 這裡沒有反抗的人不用再圍剿 這裡沒有反抗的人反抗的人反抗的人賣光了一切 你的肝和你的肺(所謂的過生活)他們扔了你的世界 去成為更好的人類(一輩子他都在躲)那廉價的眼淚就別掛在嘴邊(一直在躲一直在躲)什麼也沒改變 什麼也不改變(沒有出口沒有出口)</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-02-06</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/02/06/brave-people/" aria-label="阅读文章：勇敢的人"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">一月小结</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>这个月过得飞快，让人怀疑是不是按到了遥控器上的快进，倍速了我这一整个月。
-首先，似乎在人生规划这个听上去很广阔的定义里，这个月的确是被荒废掉了一大半，一方面是因为自己似乎还沉溺于前不久发生的事情中，另一方面是因为这个月大部分事情都没有实质性的进展，导致从心理上开始又些焦急和不安的情绪。
-这个月在很多方面跌倒了谷底，但是慢慢地都有了转机；既然到了最低矮的深渊，那么接下来很长一段时间里都会是向上爬行的过程，所以跌到谷底这件事似乎也不算糟糕。很多事情在这个月里有了更明确的方向，也同时有了对着那个方向的动力。
-这个谷在漫漫人生中是微不足道的，如果在这个层面来说的话，它充其量只能算是个坑而已，跌一下，拍...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-02-02</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/02/02/january-summery/" aria-label="阅读文章：一月小结"></a>
-</article>
-
-  
-</div>
-
-  <div class="border-t border-[--c-40]">
-
-</div>
-
-</div>
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
+        
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
         
         
-            
-            
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
         
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
         
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
+      </li>
+    </ul>
   </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
-</div>
-<!-- End Busuanzi Analytics -->
-
-
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
-  </div>
-
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>

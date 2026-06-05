@@ -1,671 +1,648 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    Tag: 生活 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>标签: 生活 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article class="articles">
+    
+    
+    <h1 class="page-type-title">#&nbsp生活</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2022" class="archive-year">2022</a>
     </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="active">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2022/10/25/quarantine-again/" class="archive-article-date">
+  <time datetime="2022-10-25T09:00:00.000Z" itemprop="datePublished">10/25</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2022/10/25/quarantine-again/"
+    >没错我又被隔离了</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2022/07/17/notes-for-apt-rental/" class="archive-article-date">
+  <time datetime="2022-07-17T14:00:00.000Z" itemprop="datePublished">07/17</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2022/07/17/notes-for-apt-rental/"
+    >租房小记</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2021" class="archive-year">2021</a>
     </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/11/14/independent-relationship/" class="archive-article-date">
+  <time datetime="2021-11-14T15:10:00.000Z" itemprop="datePublished">11/14</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/11/14/independent-relationship/"
+    >独立关系</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/08/25/note-of-moving/" class="archive-article-date">
+  <time datetime="2021-08-25T14:18:31.000Z" itemprop="datePublished">08/25</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/08/25/note-of-moving/"
+    >搬家随笔</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/07/29/dance/" class="archive-article-date">
+  <time datetime="2021-07-29T15:00:00.000Z" itemprop="datePublished">07/29</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/07/29/dance/"
+    >舞</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/05/08/wind-of-spring/" class="archive-article-date">
+  <time datetime="2021-05-08T15:28:33.000Z" itemprop="datePublished">05/08</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/05/08/wind-of-spring/"
+    >春风</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/03/17/my-puppy/" class="archive-article-date">
+  <time datetime="2021-03-17T09:45:32.000Z" itemprop="datePublished">03/17</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/03/17/my-puppy/"
+    >养狗前记</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/02/27/feb-shopping-list/" class="archive-article-date">
+  <time datetime="2021-02-27T10:22:51.000Z" itemprop="datePublished">02/27</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/02/27/feb-shopping-list/"
+    >二月的杂七杂八安利大礼包</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/12/30/health-examination/" class="archive-article-date">
+  <time datetime="2020-12-30T14:50:00.000Z" itemprop="datePublished">12/30</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/12/30/health-examination/"
+    >体检</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/10/27/screen-stander/" class="archive-article-date">
+  <time datetime="2020-10-27T02:02:55.000Z" itemprop="datePublished">10/27</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/10/27/screen-stander/"
+    >我们都需要一个显示器支架</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A7%91%E6%8A%80/" rel="tag">科技</a></li></ul>
+
+    
+  </div>
+</article>
+      
+      
+    </div>
+  </div>
+  
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/tags/%E7%94%9F%E6%B4%BB/">上一页</a><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/">1</a><span class="page-number current">2</span><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/page/3/">3</a><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/page/6/">6</a><a class="extend next" rel="next" href="/tags/%E7%94%9F%E6%B4%BB/page/3/">下一页</a>
   </nav>
-</header>
-
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
-    
-      
-      
-        <a href="/">首页</a>
-      
-    
-      
-      
-        <a href="/archives">归档</a>
-      
-    
-      
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
-    
-  </div>
-</div>
-
-  <main class="main">
-    <div class="container">
   
-    <header class="page-header">
-  <div class="breadcrumbs">
-    
-      
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
         
-        <a href="/">首页</a>
-      
-        <span class="crumb-separator">/</span>
-        <a href="/tags/">标签</a>
-      
-    
-  </div>
-  
-    <h1>生活</h1>
-  
-</header>
-
-  
-  <div class="post-list">
-  
-  
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">没错我又被隔离了</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>起因是的，我再次被隔离了。
-起因是国庆假期最后一天，也就是7号那天，早上我去吃了顿brunch，就是这次被疾控判定为密接人员。
-我因为这个国庆假期要参加婚礼，我没有选择出去旅行，就把旅行的计划放在了国庆之后的第一个周末，然后再请几天年假，提前离开，这样错峰出行不仅人少，还比较经济。上海在国庆期间也不算太平，所有去过那片酒吧区的人都被赋了红码或者被拉去隔离了，本来我和朋友们也又去那边玩的计划，后来阴差阳错没有去成，我还暗自庆幸躲过一劫。
-到了13号周四也就是计划中出发旅行的这一天，我早早地去了虹桥机场，搭乘早班机来到了重庆，这次计划在重庆玩三天，周六晚上回去，这样我还有一个周日，可以休息休息再开...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2022-10-25</span>&nbsp;·&nbsp;6 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2022/10/25/quarantine-again/" aria-label="阅读文章：没错我又被隔离了"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">租房小记</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>这个月的头等大事就是开始着手搬家的事宜，从看房子开始。是的，距离上次搬家已经经过了将近一年的时间了，现在住的地方虽然也不错，但是因为房东的关系，无法继续住在这里，多少也要折腾一下了。不知道之前有没有说过我对于这次租房的看法，这次想要搬到一个市中心的地方，最好步行或骑车即可到达我常去的那些餐厅、商场、咖啡厅等等，周末下楼就可以买杯咖啡吃顿早餐，体验一下老上海的生活。
-地理位置于是我把目光瞄准了梧桐区，范围就基本确定在了徐汇、静安和长宁这三个区。关于上班通勤的问题，因为公司处于不在市区内的15号线南端终点站，所以无论怎样都需要一次换乘，这样的话时间控制在一个小时以内就都是在可以承受的范围内。
-公司...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2022-07-17</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2022/07/17/notes-for-apt-rental/" aria-label="阅读文章：租房小记"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">独立关系</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>上海亦是个偌大的城市，形形色色的人们来到这里，带着无穷无尽的故事，编织着新的开始。
-我说了一些我对未来的计划，不知道什么时候开始它变得清晰起来，这是从前的我不会愿意提起来的事情。这个对话似乎持续了很久，直到我们忘记了时间的存在，我瞥了一眼手表，是时候结束这段对话了。
-仅仅在脑海里构思一些事，和把它们用语言完整地表达出来是完全不同的两件事。想象可以没有先后顺序，没有因果逻辑，甚至没有没有开始和结尾，你在想起一些什么的时候把想到的塞入其中便可以了。而亲口讲述出来却与之相反，你没有倒叙插叙的机会，一切平铺直叙，不会被修改了。
-“两个人的关系应该相对独立，又相互联系，谁都能真正离开对方，也都不能真正离...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-11-14</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/11/14/independent-relationship/" aria-label="阅读文章：独立关系"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">搬家随笔</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>我似乎总是不断在搬家，自从去年回国以后也同样如此。这一次搬家从看房到敲定入住再到今天彻底搬完经过了整整一个月的时间，也不是有意把时间拖得这么长，而是正好的的确确在不影响到正常工作生活的情况下，需要漫长的时间来收拾、整理、搬运，并且置办新老住所的相关事宜。
-我也似乎没有觉得搬家是一件麻烦得不得了的事情，反倒搬家以后因换环境而产生的兴奋感往往超过了搬家所带来的疲惫。我会在搬家前一段时间就开始收拾自己的东西，这往往发生在夜晚，审视自己的物品时总有种既熟悉又陌生的感觉，把它们按照刚来的时候的样子摆回盒子里，接着再放进大纸箱中。
-最先收拾的那批物品总是自己最喜爱的，小心放置、仔细包装；不像最后一些丢了不...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-08-25</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/08/25/note-of-moving/" aria-label="阅读文章：搬家随笔"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">舞</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>七月的风温暖粘腻青春动人，拂过手臂，掠过发梢，留下了汗水的痕迹。七月的夜晚带着香甜的气息，让周遭的一切显得清澈透亮，你的身影愈发清晰，细碎的黑发、纤长的食指、扬起的外衣。
-昏黄的灯光里，我问了你的名字，你把那三个字一个一个地讲给我，我用力地把它记在脑海里，生怕再过不久它就离我而去。
-杜松子是偶遇的味道，青涩的柠檬混在杜松子酒里，恰到好处地散发着酸甜的气息。我摆弄着一丛新鲜的薄荷叶片，试图把清新的薄荷味道也一并混在里一起，我任由晶莹的冰块因掌心的温度融化着，我看了一眼你，你的视线似乎也游走到了我这里。
-我似乎嗅到了一丝你的气息，在这个充满各种气味的封闭空间里，那是一种让人无法形容的独特味道，它穿...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-07-29</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/07/29/dance/" aria-label="阅读文章：舞"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">春风</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>久违了的江南春季，那清爽的春风中夹杂了雨水与青草的气息，远方飘来的花香一丝一丝地沁入鼻腔。
-我沿着雨后的自行车道往家的地方前行的时候，让我想起了去年这个时候我也喜欢骑着自行车在芝加哥骑行，那时正好趁着疫情，便在那空荡荡的城市里踏足那些从未走过的街道，看看那些原本人声鼎沸的地方此时的样子，而如今的芝加哥应该已经慢慢恢复它往日的生机了吧。
-我和W彼此熟悉似乎也是在那个时候，我们有很多相似的地方，一起打游戏，都养猫，喜欢的剧和食物也很类似。我们常常边吃饭边看互相安利的剧，这样的状态好像持续了很久，但仔细算算似乎也就持续了一个月多而已。
-W很聪明，还有很多我很敬佩的地方，我们常常彼此交换一些特别的爱好...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-05-08</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/05/08/wind-of-spring/" aria-label="阅读文章：春风"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry has-cover">
-  
-    <div class="entry-cover">
-      <img loading="lazy" src="/images/IMG_6019.jpg" alt="养狗前记">
-    </div>
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">养狗前记</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>朋友圈里无意间看到了它的样子，十分有眼缘（其实就是看脸），便一拍脑袋决定养它了。距离接到它正好有一周的时间，这一周时间足够我做准备。
-因为一直计划着在公司附近租房，它的到来成为了一个很好的契机。这样我将会拥有更多的时间，早上起来不会太赶，足够洗个澡冲杯咖啡，之后甚至还能下楼遛个狗。晚上回去也不会太晚，随着春天的到来，下班后的金色时刻变得令人愉悦，相比从地铁站出来已是夜晚，不如好好享受这段时间，遛个狗便是此时再合适不过的选择。
-脑补好了这些场景，我就迅速地开始找房子。好在有多年自己租房地经验，这周末的看房租房并没有遇到太多问题，但愿之后住的过程中也一切顺利。我的需求说难不难，但是要找到满意的房子...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-03-17</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/03/17/my-puppy/" aria-label="阅读文章：养狗前记"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry has-cover">
-  
-    <div class="entry-cover">
-      <img loading="lazy" src="/images/feb001.jpg" alt="二月的杂七杂八安利大礼包">
-    </div>
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">二月的杂七杂八安利大礼包</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>最近有很多东西想分享的，就想着直接写篇文章算了。
-剧集最近听播客Nice Try的时候被安利了一部Apple TV+的原创剧Ted Lasso，恰好今年苹果又多送了半年的会员，于是抱着不看白不看的心态开始看这部剧。
-这里顺便提一句，Apple TV+客户端的体验是真的好，不仅UI好看，也不会有任何广告元素，除了视频开头有随时可以跳过的其他剧集的宣传片。并且它还支持Airpods Pro的立体音频，iOS14的画中画，iPhone刘海屏的全屏播放，杜比视界，4KHDR等一切能加强观影体验的功能。（国内不需要翻墙也能看）
-这部剧讲的是一个美式橄榄球教练去英国带足球球队的故事，剧集中不断出现的英美文...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-02-27</span>&nbsp;·&nbsp;4 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/02/27/feb-shopping-list/" aria-label="阅读文章：二月的杂七杂八安利大礼包"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">体检</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>我记得上次体检是出国之前的留学体检，那之后就再也没有全面了解过自己的身体状况了，只是零零星星做过一些检测，比如血检、视力检测、牙齿检测、还有STD这些。虽然这些年自我感觉良好，但也不免在这个体检前夕担心起来身体的各项指标是否合格。现在只能给自己安慰每天早上自己都在量体重，各项指标都显示绿色的“标准”（其中只包括体重、体脂等无关紧要的内容），不知道明天能收到什么样结果，也许令人意外，又或许让我满意，总之一切都要等十个小时后才知道了。睡了睡了，千万不能让人发现我每天熬夜才是。</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-12-30</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/12/30/health-examination/" aria-label="阅读文章：体检"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry has-cover">
-  
-    <div class="entry-cover">
-      <img loading="lazy" src="/images/DSC03467.jpg" alt="我们都需要一个显示器支架">
-    </div>
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">我们都需要一个显示器支架</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>我终于用上了十分常见的显示器支架，于是我现在很后悔为什么不早点用这一类的东西。
-
-「一」省桌面空间这个支架对我来说最有用的地方是它可以在平时不用键盘的时候给我面前腾出大量空间。其实很多时候键盘并不是一件使用频率很高的东西，他基本上只有在我写作、码代码、聊天的时候会被大量使用（还有游戏）。除此之外，比如我看视频，刷网页等等，我完全可以把键盘收起来，并把iPad之类的放在面前，或是做笔记（打手游）或是阅读（聊天）都很方便。
-「二」防尘防溅如果你也和我一样喜欢在电脑前边看视频（干活）边吃外卖，这个支架能彻底解决食物溅到你昂贵的机械键盘上的问题。我原来甚至会在键盘上盖好纸巾甚至把键盘拿走，从此以后你再...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-10-27</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/10/27/screen-stander/" aria-label="阅读文章：我们都需要一个显示器支架"></a>
-</article>
-
-  
-</div>
-
-  <div class="border-t border-[--c-40]">
-
-  <!-- <nav class="pagination"> -->
-  <div class="flex flex-row justify-center px-24 max-w-prose mx-auto py-4">
-
-    
-        <a class="hover:bg-gray-100 rounded-md text-center shadow-md flex flex-row border-1 items-center justify-center pr-4 pl-2" href="/tags/生活/" class="pagination-prev">
-          <iconify-icon width="20" icon="mingcute:left-fill" data-inline="false">
-          </iconify-icon>
-          Prev
-        </a>
-      
-      <div class="flex flex-grow text-center justify-center">
-        <div class="border-2 text-xl font-bold opacity-70 w-fit px-2 rounded-lg">
-          <p>2</p>
-        </div>
-      </div>
-      
-          <a class="hover:bg-gray-100 rounded-md text-center justify-center border-1 shadow-md flex flex-row items-center pl-4 pr-2" href="/tags/生活/page/3/">
-            Next
-            <iconify-icon width="20" icon="mingcute:right-fill" data-inline="false">Next!</iconify-icon>
-          </a>
-        
-      </div>
-      <!-- <a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/">1</a><span class="page-number current">2</span><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/page/3/">3</a><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/tags/%E7%94%9F%E6%B4%BB/page/6/">6</a> -->
-  <!-- </nav> -->
-  
-</div>
-
-</div>
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
         
         
-            
-            
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
         
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
         
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
+      </li>
+    </ul>
   </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
-</div>
-<!-- End Busuanzi Analytics -->
-
-
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
-  </div>
-
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>

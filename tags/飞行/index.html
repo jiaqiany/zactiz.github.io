@@ -1,542 +1,543 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    Tag: 飞行 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>标签: 飞行 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article class="articles">
+    
+    
+    <h1 class="page-type-title">#&nbsp飞行</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2019" class="archive-year">2019</a>
     </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="active">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/12/22/note-of-winter/" class="archive-article-date">
+  <time datetime="2019-12-22T03:57:09.000Z" itemprop="datePublished">12/22</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2019/12/22/note-of-winter/"
+    >冬至小记</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%9E%E5%BF%86/" rel="tag">回忆</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A3%9E%E8%A1%8C/" rel="tag">飞行</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/12/17/the-flight/" class="archive-article-date">
+  <time datetime="2019-12-17T13:33:21.000Z" itemprop="datePublished">12/17</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2019/12/17/the-flight/"
+    >飞行</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A3%9E%E8%A1%8C/" rel="tag">飞行</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/30/wake-up/" class="archive-article-date">
+  <time datetime="2019-06-30T11:06:31.000Z" itemprop="datePublished">06/30</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2019/06/30/wake-up/"
+    >梦醒</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%9E%E5%BF%86/" rel="tag">回忆</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A2%A6%E5%A2%83/" rel="tag">梦境</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A3%9E%E8%A1%8C/" rel="tag">飞行</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2016" class="archive-year">2016</a>
     </div>
-  </nav>
-</header>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/12/09/air-notes/" class="archive-article-date">
+  <time datetime="2016-12-08T22:27:21.000Z" itemprop="datePublished">12/09</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2016/12/09/air-notes/"
+    >机上随笔</a> 
+</h2>
+ 
 
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
-    
-      
-      
-        <a href="/">首页</a>
-      
-    
-      
-      
-        <a href="/archives">归档</a>
-      
-    
-      
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
-    
-  </div>
-</div>
-
-  <main class="main">
-    <div class="container">
-  
-    <header class="page-header">
-  <div class="breadcrumbs">
-    
-      
-        
-        <a href="/">首页</a>
-      
-        <span class="crumb-separator">/</span>
-        <a href="/tags/">标签</a>
-      
-    
-  </div>
-  
-    <h1>飞行</h1>
-  
-</header>
-
-  
-  <div class="post-list">
-  
-  
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">冬至小记</h2>
     </header>
     
-      <div class="entry-content no-mathjax">
-        <p>不知道什么时候开始，各个飞机客舱内的灯饰就被换成了形容不出来的蓝紫色，可能是这样的颜色让人平静。但飞机引擎声依旧响亮，从小时候就一直如此，好在有耳机耳塞之类的东西可以稍微缓和一下。
-想起了小时候外婆给我讲儿童读物里的故事：“从飞机上看下去，马路变成了一条有一条线，车辆变成了火柴盒，人们像蚂蚁一样小。”
-但后来真正坐上飞机以后却让人失望，因为很快飞机就一头扎进了云层里什么都看不到了。不过我早已忘记了自己第一次坐飞机是什么时候，也不记得是去哪里，可能是刚记事没多久。
-儿时的有这么一段时光是在上海和宁波的往返中度过。
-母亲在这个世纪初就和她要好的一位女性朋友去了上海，我和她有过差不多三四年分开的日子...</p>
-      </div>
     
-    <footer class="entry-footer">
-      <span>2019-12-22</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2019/12/22/note-of-winter/" aria-label="阅读文章：冬至小记"></a>
-</article>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A3%9E%E8%A1%8C/" rel="tag">飞行</a></li></ul>
 
-  
     
-    
-<article class="post-entry">
+  </div>
+</article>
+      
   
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">飞行</h2>
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/05/08/flight-2016/" class="archive-article-date">
+  <time datetime="2016-05-08T06:52:00.000Z" itemprop="datePublished">05/08</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2016/05/08/flight-2016/"
+    >没有网的二十小时</a> 
+</h2>
+ 
+
     </header>
     
-      <div class="entry-content no-mathjax">
-        <p>引擎声嗡嗡作响，我一觉醒来发现AirPods少了一边，我便开始焦虑不已。我在拥挤的空间里，尽量不打扰两边的情况下，尽力地查看了我视线内的所有地方，结果当然是依旧没有找到。
-距离航行结束还有一个半小时，我试图转移注意来度过这难熬的时间。
-这次出门前我曾思考要不要带一个耳罩式降噪耳机，后来我抱着既然买了AirPods Pro就应该多使用的心态，放弃了跟着我飞行无数次的QC35，有些后悔。​接着我掏出手机记录下这件事的发生，时间仅仅过去了五分钟。</p>
-      </div>
     
-    <footer class="entry-footer">
-      <span>2019-12-17</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2019/12/17/the-flight/" aria-label="阅读文章：飞行"></a>
-</article>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A3%9E%E8%A1%8C/" rel="tag">飞行</a></li></ul>
 
-  
     
-    
-<article class="post-entry">
+  </div>
+</article>
+      
   
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">梦醒</h2>
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2015" class="archive-year">2015</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2015/10/13/peace/" class="archive-article-date">
+  <time datetime="2015-10-13T13:20:04.000Z" itemprop="datePublished">10/13</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2015/10/13/peace/"
+    >愿岁月静好</a> 
+</h2>
+ 
+
     </header>
     
-      <div class="entry-content no-mathjax">
-        <p>气流颠簸的作用下，我从熟睡中醒来，昏暗的机舱内似乎意外得安静，其他人是不是和一晚没睡的我一样，一躺便不省人事了。
-我似乎梦到了第一次坐这么长途飞机的时候，也有可能那是我睡前想起的画面。也是一样昏沉的机舱，有人熟睡着，有人意外醒来，回忆着过往的自己。
-十几个小时的时间时而迅速流逝，时而像是静止了似的。
-似乎几分钟时间就可以回顾完过去整整二十年的时光，有些人和事稍瞬即逝，再漫长的经历也变得渺小。
-有时候思绪却会停留在一个过去小小的片段里，它可能让你懊恼、让你伤心。你用尽脑海里的全部思考着，如果当时这么做，后来又会是怎样呢。终于你想到了一个更好的结果，欣慰地沉浸其中。
-我可以肆意地幻想，没有人能通过...</p>
-      </div>
     
-    <footer class="entry-footer">
-      <span>2019-06-30</span>&nbsp;·&nbsp;1 分钟
-    </footer>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A3%9E%E8%A1%8C/" rel="tag">飞行</a></li></ul>
+
+    
   </div>
-  <a class="entry-link" href="/2019/06/30/wake-up/" aria-label="阅读文章：梦醒"></a>
 </article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">机上随笔</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>坐在没有网络的飞机上，开始看起了第三部电影，主角们无数的遭遇对我来说仅仅是几十分钟时间，透过屏幕，感受着时间的慢慢流逝。逐渐地，身体变得疲乏起来，一阵困意袭来，便沉沉的睡去了。感觉不到自己休息了多久，醒来的时候恰好可以吃三明治，咬在嘴里冰冰的，没有温度，要是这时候可以加热一下就好多了。
-没多久，关了灯，周围变得黑暗又寂静。因为时差，完全没有困意，便闭着眼睛开始想事情，或者说是冥想。
-记得那年那个在西双版纳的小村落，住在村长儿子的家里。晚饭过后，灯火就变得稀疏起来，随着渐渐笼罩的黑夜，这里的一切都变得静谧起来。那时候正值二月，虽说这里肯定不像冬天的江南那样寒风刺骨，但是没有了白天暖人的阳光，还是...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2016-12-09</span>&nbsp;·&nbsp;1 分钟
-    </footer>
+      
+      
+    </div>
   </div>
-  <a class="entry-link" href="/2016/12/09/air-notes/" aria-label="阅读文章：机上随笔"></a>
-</article>
+  
+  
 
   
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">没有网的二十小时</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>又是一年暑假，再次以没有网的20小时为开始。
-人在没有什么事情可以做的时候往往会想很多奇怪的事情，脑补出来的画面足以填补整段路程的枯燥。
-好久没有好好睡觉的我一上飞机便沉沉的睡去，中途恍惚一下好像又像是那年秋天，头依旧是昏昏沉沉的，期盼着早点回到家里。那年同样是从加拿大回来，只不过那时的多伦多机场似乎并没有那么让人惊喜。
-飞机穿越在北冰洋上空，外面寒冷的空气让厚厚的机窗上凝固了不少晶莹的霜。似乎已经好久没有体验过长时间不用网络，不与外界联系的生活了，虽然这个对我来说的长时间还不足一天。</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2016-05-08</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2016/05/08/flight-2016/" aria-label="阅读文章：没有网的二十小时"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">愿岁月静好</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>正在一架由加州飞往芝加哥的飞机上，没有什么颠簸，安稳得就像近来的生活。在这个midterm期间，给自己放了一个短短的假期，四天时间说短也不短，足够在三藩好好品味一番了。慵懒的海鸥，陡峭的马路，绚烂的夜晚，缤纷的彩虹，一幕幕被重新编辑进记忆的长河里。距离上次来这个充满阳光的地方已经有四年了，还依稀记得这里发生的种种。远方的岛屿隔着海，我依在码头边，好似产生了熟悉的感觉，不知道躺在那边的海狮们还记不记得我曾经来过。</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2015-10-13</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2015/10/13/peace/" aria-label="阅读文章：愿岁月静好"></a>
-</article>
-
-  
-</div>
-
-  <div class="border-t border-[--c-40]">
-
-</div>
-
-</div>
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
+        
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
         
         
-            
-            
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
         
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
         
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
+      </li>
+    </ul>
   </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
-</div>
-<!-- End Busuanzi Analytics -->
-
-
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
-  </div>
-
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>

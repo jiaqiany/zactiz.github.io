@@ -1,361 +1,123 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    丝 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>丝 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
-    </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
-    </div>
-  </nav>
-</header>
 
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article id="post-silk" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
     
-      
-      
-        <a href="/">首页</a>
-      
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  丝
+</h1>
+ 
+
+    </header>
     
-      
-      
-        <a href="/archives">归档</a>
-      
+
     
+    <div class="article-meta">
+      <a href="/2019/05/30/silk/" class="article-date">
+  <time datetime="2019-05-30T13:34:22.000Z" itemprop="datePublished">2019-05-30</time>
+</a>
       
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
-    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/world/">关于世界</a>
   </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">887</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">2 分钟</span>
+        </span>
+    </span>
 </div>
 
-  <main class="main">
-    <!-- css -->
-
-<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
-
-  
-<link rel="stylesheet" href="/lib/tocbot/tocbot.min.css">
-
-    <!-- toc -->
-    
-<section class="px-6 max-w-prose mx-auto md:px-0">
-  <!-- Post header before content -->
-  <header class="py-4">
-    <div class="flex flex-col gap-2 pt-4 md:pt-6">
-      <!-- Title -->
-      <div id="article-title" class="leading-snug">
-        <p class="text-3xl font-bold text-[var(--c-100)] mb-4">丝</p>
-      </div>
-      <!-- Meta data -->
-      <div>
-        <section class="
-          flex flex-col gap-x-2 gap-y-1 text-sm text-[var(--c-100)]">
-          <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <!-- Dates -->
-            <div class="flex items-center gap-1">
-              <iconify-icon width="18" icon="mingcute:add-circle-fill" ></iconify-icon>
-              Created: <time class="w-max">2019-05-30</time>
-            </div>
-            <div class="flex items-center gap-1">
-              <iconify-icon width="18" icon="mingcute:refresh-3-fill" ></iconify-icon>
-              Edited: <time class="w-max">2021-09-03</time>
-            </div>
-          </div>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-3">
-            <!-- Author -->
-            
-
-            <!-- Word count -->
-            <span class="flex items-center gap-1">
-              <iconify-icon width="18" icon="mingcute:book-2-fill" ></iconify-icon>
-              <span>887 words, 2 min</span>
-            </span>
-            <!-- Categories -->
-            
-              <!-- <span class="text-gray-400">·</span> -->
-              <span class="flex flex-row items-center gap-1 group hover:underline">
-                <iconify-icon class="transition-all group-hover:scale-125 mr-0"
-                  width="18"
-                  icon="mingcute:classify-2-fill">
-                </iconify-icon>
-                <a class="article-category-link" href="/categories/world/">关于世界</a>
-              </span>
-            
-          </div>
-        </section>
-      </div>
-      <!-- tags -->
-      <div>
-        
-<div class="flex flex-wrap gap-1">
-  
-    
-      <a href="/tags/%E5%90%AF%E5%8F%91/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        启发
-      </a>
-    
-      <a href="/tags/%E6%83%B3%E8%B1%A1/" 
-        class="
-          tag
-          text-sm
-          rounded-full
-          px-[5px]
-          border-[1px]
-          border-[var(--c-theme)]
-          text-[var(--c-theme)]
-          bg-[var(--c-0)]
-          dark:bg-[var(--c-0)]
-          dark:drop-shadow-none
-          hover:bg-[var(--c-theme)]
-          hover:text-[var(--c-0)]
-          dark:hover:text-[var(--c-10)]
-          dark:hover:bg-[var(--c-theme)]
-        ">
-        想象
-      </a>
-    
-  
-</div>
-      </div>
+      
     </div>
-  </header>
-  <!-- content -->
-  <article class="post-content prose m-auto dark:prose-invert">
-    <p>在这个季节里，除去下雨天，每天下午四五点，阳光总是准时穿过玻璃窗跃入那属于我的小小房间里，空旷的房间变得丰富又明亮。这情景让我看得有些呆滞，似乎好久没有这么毫无顾虑地简单过上一天了。</p>
+    
+
+    
+    
+
+
+
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <p>在这个季节里，除去下雨天，每天下午四五点，阳光总是准时穿过玻璃窗跃入那属于我的小小房间里，空旷的房间变得丰富又明亮。这情景让我看得有些呆滞，似乎好久没有这么毫无顾虑地简单过上一天了。</p>
 <p>有时候午睡变成了一件有着罪恶感的事情，在赶紧起来的理性和再睡一会的贪婪中犹豫着是一种痛苦却又令人满足的情形。</p>
 <p>在长达一刻钟的犹豫后，我拖着有一些沉重的脑袋和身体离开了那张铺满了阳光的柔软的床，然后漱了口，喝了水，又仿佛是新的一天似的。</p>
 <p>日照时间从朦胧的睡梦里一直持续到晚餐后，迎面的风让人不再觉得冷，天空变得清澈云层变得清晰，我把这个时节称之为“初夏”。</p>
@@ -369,267 +131,474 @@
 <p>…</p>
 <p>写完刚刚那段以后似乎又出现了一段不知道过了多久的被剥离的时间，思绪被瞬间抽了出来，就像在这个季节里我曾见过取蚕丝的情形；那细长纷纷的丝拉长了我略显疲惫的眼，让人迷离抑或沉醉，它们在自然的阳光下闪烁着，还有地上思绪般的影子，温柔又静谧，似幻似回忆。</p>
 
-  </article>
-
-  <!-- prev and next -->
-  <div class="flex justify-between mt-4 pt-4
-    border-t border-[var(--c-sep)] text-sm
-    gap-2 text-[var(--c-50)]
-  ">
-    <div>
       
-        <a href="/2019/06/30/wake-up/"
-          class="
-            transition-all
-            flex justify-center
-            hover:-translate-x-1
-            hover:text-[var(--c-80)]
-          ">
-          <iconify-icon width="20" icon="mingcute:left-fill" data-inline="false">
-          </iconify-icon>
-          梦醒
-        </a>
+      <!-- reward -->
       
     </div>
-    <div>
+    
+    
+      <!-- copyright -->
       
-        <a href="/2019/05/13/a-song/"
-          class="
-            flex 
-            justify-center
-            hover:translate-x-1 
-            transition-transform
-            hover:text-[var(--c-100)]
-          "
-        >
-          歌
-          <iconify-icon width="20" icon="mingcute:right-fill" data-inline="false"></iconify-icon>
-        </a>
+        <div class="declare">
+          <ul class="post-copyright">
+            <li>
+              <i class="ri-copyright-line"></i>
+              <strong>版权声明： </strong>
+              本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+            </li>
+          </ul>
+        </div>
+        
+    <footer class="article-footer">
       
-    </div>
-  </div>
-
-  <!-- comment -->
-  <div class="article-comments mt-12">
-    
-
-  </div>
-</section>
-<!-- js inspect -->
-
-<script src="/lib/clipboard.min.js"></script>
-
-
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    "HTML-CSS": {
-        preferredFont: "TeX",
-        availableFonts: ["STIX","TeX"],
-        linebreaks: { automatic:true },
-        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
-    },
-    tex2jax: {
-        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
-        processEscapes: true,
-        ignoreClass: "tex2jax_ignore|dno",
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-        equationNumbers: { autoNumber: "AMS" },
-        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
-        Macros: { href: "{}" }
-    },
-    messageStyle: "none"
-  });
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  $(document).ready(() => {
-    const maraidConfig = {
-      theme: "default",
-      logLevel: 3,
-      flowchart: { curve: "linear" },
-      gantt: { axisFormat: "%m/%d/%Y" },
-      sequence: { actorMargin: 50 },
-    };
-    mermaid.initialize(maraidConfig);
-  });
-</script>
-
-
-
-<script src="/lib/fancybox/fancybox.umd.min.js"></script>
-
-<script>
-  $(document).ready(() => {
-    $('.post-content').each(function(i){
-      $(this).find('img').each(function(){
-        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
-        var alt = this.alt;
-        var title = this.title;
-        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
-        else if (title) $(this).after('<span class="fancybox-title">' + title + '</span>');
-        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + title + '"></a>')
-      });
-      $(this).find('.fancybox').each(function(){
-        $(this).attr('rel', 'article' + i);
-      });
-    });
-
-    Fancybox.bind('[data-fancybox="gallery"]', {
-        // options
-    })
-  })
-</script>
-
-<!-- tocbot begin -->
-
-<script src="/lib/tocbot/tocbot.min.js"></script>
-
-<script>
-  $(document).ready(() => {
-      tocbot.init({
-        // Where to render the table of contents.
-        tocSelector: '.post-toc',
-        // Where to grab the headings to build the table of contents.
-        contentSelector: '.post-content',
-        // Which headings to grab inside of the contentSelector element.
-        headingSelector: 'h1, h2, h3',
-        // For headings inside relative or absolute positioned containers within content.
-        hasInnerContainers: true,
-    });
-  })
-</script>
-<!-- tocbot end -->
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
-        
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
-        
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
-  </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
+          
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
 </div>
-<!-- End Busuanzi Analytics -->
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zactiz.com/2019/05/30/silk/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%AF%E5%8F%91/" rel="tag">启发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li></ul>
 
 
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
+    </footer>
+
   </div>
 
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2019/06/30/wake-up/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            梦醒
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2019/05/13/a-song/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">歌</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        app_id: '',
+        app_key: '',
+        path: window.location.pathname,
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
+        
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
+        
+        
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
+        
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>

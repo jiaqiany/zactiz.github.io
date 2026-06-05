@@ -1,664 +1,586 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    归档 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>归档 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article class="articles">
+    
+    
+    <h1 class="page-type-title">归档</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
     </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="active">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/19/time-to-leave-2/" class="archive-article-date">
+  <time datetime="2020-07-19T15:59:59.000Z" itemprop="datePublished">07/19</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/07/19/time-to-leave-2/"
+    >离别前夕（二）</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/15/swim-1/" class="archive-article-date">
+  <time datetime="2020-07-15T10:33:19.000Z" itemprop="datePublished">07/15</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/07/15/swim-1/"
+    >游泳了解一下</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/13/time-to-leave-1/" class="archive-article-date">
+  <time datetime="2020-07-13T15:59:59.000Z" itemprop="datePublished">07/13</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/07/13/time-to-leave-1/"
+    >离别前夕</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/10/airpods/" class="archive-article-date">
+  <time datetime="2020-07-10T05:31:45.000Z" itemprop="datePublished">07/10</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/07/10/airpods/"
+    >AirPods拥趸</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/06/june-summary/" class="archive-article-date">
+  <time datetime="2020-07-06T10:25:03.000Z" itemprop="datePublished">07/06</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/07/06/june-summary/"
+    >六月小结</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/05/ios14-widgets/" class="archive-article-date">
+  <time datetime="2020-07-05T08:23:12.000Z" itemprop="datePublished">07/05</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/07/05/ios14-widgets/"
+    >两周iOS14桌面小组件的体验</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/06/12/come-back/" class="archive-article-date">
+  <time datetime="2020-06-12T05:48:44.000Z" itemprop="datePublished">06/12</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/06/12/come-back/"
+    >再回来看的时候</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/06/06/may-summary/" class="archive-article-date">
+  <time datetime="2020-06-05T17:27:32.000Z" itemprop="datePublished">06/06</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/06/06/may-summary/"
+    >五月小结</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/06/04/84/" class="archive-article-date">
+  <time datetime="2020-06-04T03:47:44.000Z" itemprop="datePublished">06/04</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/06/04/84/"
+    >八十四</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/06/02/envy/" class="archive-article-date">
+  <time datetime="2020-06-02T06:11:08.000Z" itemprop="datePublished">06/02</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/06/02/envy/"
+    >羡慕是常态</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+  </div>
+</article>
+      
+      
     </div>
+  </div>
+  
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/archives/page/12/">上一页</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/11/">11</a><a class="page-number" href="/archives/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/archives/page/14/">14</a><a class="page-number" href="/archives/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/24/">24</a><a class="extend next" rel="next" href="/archives/page/14/">下一页</a>
   </nav>
-</header>
-
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
-    
-      
-      
-        <a href="/">首页</a>
-      
-    
-      
-      
-        <a href="/archives">归档</a>
-      
-    
-      
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
-    
-  </div>
-</div>
-
-  <main class="main">
-    <div class="container">
   
-    <header class="page-header">
-  <div class="breadcrumbs">
-    
-      <a href="/">首页</a>
-    
-  </div>
-  
-    <h1>归档</h1>
-  
-</header>
-
-  
-  <div class="post-list">
-  
-  
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">离别前夕（二）</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>离别的念头在心中发芽、成长，于是便计划着如何把这件事一一告诉身边的所有人，于是也有了你现在所看到的这一系列名为「离别前夕」的文章。
-原谅我没有第一时间放出来，因为我没有做下决定，我也没有决定要告诉别人自己将会离开这件事。
-我现在面临着三个选择，第一是留在美国，但这里既危险又无趣，久久不见好转的疫情注定让这里在很长一段时间里都无法恢复到原来本该有的“自由”生活，越来越紧张的中美关系，越来越收紧的留学政策，也让这一切雪上加霜。美国大陆就像是一个已经占据高点的山头，山下山中的人围了一圈，有的不安于现状便尽力往山顶爬着，努力也艰辛；有的看尽了山顶的日出云海便拍拍衣角扬长而去，山顶固然景色秀丽，但住山头...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-07-19</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/07/19/time-to-leave-2/" aria-label="阅读文章：离别前夕（二）"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">游泳了解一下</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>自从这个月健身房重新开放以来，我每天都计划着腾出时间下楼健身游泳，夏天下水游个泳真的是一件既轻松又让人愉悦的事情。这个健身房有一个室内一个室外共两个泳池，室外那个总是不少人躺在泳池边晒太阳，于是我总是选择去室内那个，不仅人少，还不晒，舒服得很。
-三月份的时候入手了一个完全防水的耳塞（或者说是一整个音乐播放器），那时候写了一篇名为「游泳随身听」的文章，那时憧憬着四月就能戴上它感受了，殊不知它在我的书桌上躺了两个半月。
-原本游泳对我来说最焦虑的事情便是无法听歌，如果场馆里又没有音乐的话，其实整个过程还是很枯燥的，我虽然会趁此机会想很多事情，但是它依旧不如跑步、散步或是椭圆机那样，可以哼着音乐放松。...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-07-15</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/07/15/swim-1/" aria-label="阅读文章：游泳了解一下"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">离别前夕</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>树木、房屋、云层不断往身后褪去，加速了归去的脚步，思绪依旧不知留在哪里，飘忽不定。想到了沧海中的孤帆，漂泊远洋，汹涌巨浪，那未知的前方彷徨也危险，但也只有这里能看到无垠之海，初升之日，任人穿梭。
-似乎是到了该换个地方生活的时候，放下那些能放下的，能忘记的，能抽离的，再带上一些不愿丢弃的，就像上次来的时候那样。
-渐渐明白了，世界之大，我也不可能踏足其中每一片，人终要拘于一隅，劳作生活，那不再是一种满足当下且热烈的愉悦方式，相比之下，它更柔软长绵，沁人甘甜。
-我曾不止一次，在不一样的心情、环境、状态下想过在不同地方的生活方式。我想象着那个自己居住的属于自己的角落，想象过家庭成员和周末的计划，甚至想...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-07-13</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/07/13/time-to-leave-1/" aria-label="阅读文章：离别前夕"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry has-cover">
-  
-    <div class="entry-cover">
-      <img loading="lazy" src="/images/airpods.png" alt="AirPods拥趸">
-    </div>
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">AirPods拥趸</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>我也算是AirPods忠实拥趸了。
-一代是17年到处卖断货的时候在Best Buy买到一个，它陪了我很多年，有了AirPods以后一度不愿意带其它任何耳机，它那优秀的体验让我爱上了。
-
-去年春天的时候出了二代，考虑到一代电池已经完全不行了就把一代给了我妈，自己在夏天换了个二代（图中右上角）。那时候买的并不是无线充电版，所以总的来说和原先的一代几乎没有任何使用上的区别，硬要说的话就是，连接更快速流畅了，以及终于回到了17年那时候的超强续航，出门健身也不用带着放耳机的Case了，撑满健身两小时加上来回路上的时间完全没有问题。
-后来买了差不多两个月吧，AirPods Pro就发售了，本来想着自己还有...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-07-10</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/07/10/airpods/" aria-label="阅读文章：AirPods拥趸"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">六月小结</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>阳光是这个月最深刻的印象，除了几个阴沉沉的下雨天，几乎每一天都晴空万里，让人止不住想出门走走。
-我也更频繁地出门了，不是因为它变得安全了，而是被困在家里久了实在是令人窒息。我更频繁地出门买菜散步，更频繁地去湖边、去公园，这个城市也到了它一年中最美丽、最舒适的时候。
-随着更多场所的开放（也许是暂时的），不禁让我感觉是不是一切都在逐渐恢复成它原来的样子。我也迫切地等待着回到原来的生活。
-半年已然溜走，回想自己这半年来所做的事，似乎也没什么值得拿出来说的；但再仔细回想一下，它们多半是兴趣所致，把自己喜欢的事情趁着这段清闲的时候更系统地、更深入地发展着，阅读写作也好、科技游戏也罢，皆没有落下。
-这个月...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-07-06</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/07/06/june-summary/" aria-label="阅读文章：六月小结"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry has-cover">
-  
-    <div class="entry-cover">
-      <img loading="lazy" src="/images/wid001.jpg" alt="两周iOS14桌面小组件的体验">
-    </div>
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">两周iOS14桌面小组件的体验</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>不知不觉升级到iOS14已经两周了，不得不说它在很多方面都得到了我与我的朋友们的一致认可，特别是一些细节，会让人有“终于改进了”的感觉，比如再也不会占用全屏的来电提醒和Siri，还有支持画中画以后优秀的视频体验（Facetime和看视频）。
-当然这次系统升级最值得讲的就是这个桌面小组件了，虽然它在手机系统上早已不是什么新鲜事，隔壁的Android和过去的Windows Phone早已用上了，但是当这功能在iOS上出现的时候就可以大致保证在美观和体验方面不会出问题，所以让人十分期待。
-
-首先，桌面小组件的确很好看，切割精细的圆角，整齐统一的风格，还有色彩丰富却不显杂乱的内容，都让它完美地融合进了...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-07-05</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/07/05/ios14-widgets/" aria-label="阅读文章：两周iOS14桌面小组件的体验"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">再回来看的时候</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>偶然登陆了一下似乎已经被自己忘了许久的QQ，看了眼曾经加的群，和同样许久没有上线的好友们，一切都索然无味。正当决定下线时，偶然想起被自己锁起来的空间，突然心血来潮决定前去看一眼。
-看着以前写的东西有种熟悉的感觉，不知是因为人本就是这样遵循着想做的事情一步一步成长的，还是因为生活本就是一个周而复始的过程，相似又稍许不同。
-首先，我发现早在2009年我就在日志里写一些关于游戏的内容了，有关于游戏展会的点评，还有一整年游戏业界的进程，还有自己喜爱游戏的评价。没想到已经过去十年，我也不曾想到十年后的现在我又开始了写关于游戏的文章。
-同样是2009年，我写下了一篇名叫“九月的一个小结”的日志，我看着自己...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-06-12</span>&nbsp;·&nbsp;4 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/06/12/come-back/" aria-label="阅读文章：再回来看的时候"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">五月小结</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>还没来得及好好感受这年春天，它便送指缝间悄然溜走了，连个尾巴都没抓住。
-这个月少些了阴雨，多了些阳光，少了些苦涩，多了些甘甜。这个月越来越动荡的世界让人彷徨，却又让人越发珍惜那些生活中的小确幸。窗外那纷飞的尘土，那嘈杂的声音，让人迷了眼，让人分了心，让人乱了意；转过头看到身边那慵懒的身影，那柔软的叫唤，让人回了神，让人定了心，让人咧了嘴。
-接着夏天便来临了，伴随着雷声和南风。
-这个月看完了一本拖了很久的书《台北人》，Kindle上的批注从2018年一直持续到了这个月，好在里面的每个故事都是独立的，就算中间断了也没有任何关系，所以它很适合想每个晚上睡前读一篇故事的人。这让我想起小时候每周日傍晚去...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-06-06</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/06/06/may-summary/" aria-label="阅读文章：五月小结"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">八十四</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>离愁弥漫世界，在无际的天空中生出无数的情境。
-就是这离愁整夜地悄望星辰，在七月阴雨之中，萧萧的树籁变成抒情的诗歌。
-就是这笼压弥漫的痛苦，加深而成为爱、欲，而成为人间的苦乐；就是它永远通过诗人的心灵，融化流涌而成为诗歌。</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-06-04</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/06/04/84/" aria-label="阅读文章：八十四"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">羡慕是常态</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>之前与人讨论过关于时间分配的问题，如果把一天二十四小时分成三份，八小时用于休息，八小时用于工作和学习，八小时用于娱乐和兴趣；它们分别对应生理必须需求、生活必须需求、以及生活非必须需求；再直接一点讲就是，不做立马会死的事、不做以后会饿死的事、以及做不做都不会死的事。这次想讲讲那些做不做都不会死的事。
-常听到有人羡慕别人拥有的，例如身材、学识、技术等等，无法否认的是羡慕别人拥有的并且自己所没有的是一件合理且常见的事情，我们或多或少，时常有类似的感受。我们会羡慕年轻却有突出学术成就的人们，我们也同样会羡慕身材管理一丝不苟的人们，我们还会羡慕家庭条件优渥或是家庭和睦友爱的人们，不管有没有被注意过，这样...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-06-02</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/06/02/envy/" aria-label="阅读文章：羡慕是常态"></a>
-</article>
-
-  
-</div>
-
-  <div class="border-t border-[--c-40]">
-
-  <!-- <nav class="pagination"> -->
-  <div class="flex flex-row justify-center px-24 max-w-prose mx-auto py-4">
-
-    
-        <a class="hover:bg-gray-100 rounded-md text-center shadow-md flex flex-row border-1 items-center justify-center pr-4 pl-2" href="/archives/page/12/" class="pagination-prev">
-          <iconify-icon width="20" icon="mingcute:left-fill" data-inline="false">
-          </iconify-icon>
-          Prev
-        </a>
-      
-      <div class="flex flex-grow text-center justify-center">
-        <div class="border-2 text-xl font-bold opacity-70 w-fit px-2 rounded-lg">
-          <p>13</p>
-        </div>
-      </div>
-      
-          <a class="hover:bg-gray-100 rounded-md text-center justify-center border-1 shadow-md flex flex-row items-center pl-4 pr-2" href="/archives/page/14/">
-            Next
-            <iconify-icon width="20" icon="mingcute:right-fill" data-inline="false">Next!</iconify-icon>
-          </a>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
         
-      </div>
-      <!-- <a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/11/">11</a><a class="page-number" href="/archives/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/archives/page/14/">14</a><a class="page-number" href="/archives/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/24/">24</a> -->
-  <!-- </nav> -->
-  
-</div>
-
-</div>
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
         
         
-            
-            
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
         
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
         
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
+      </li>
+    </ul>
   </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
-</div>
-<!-- End Busuanzi Analytics -->
-
-
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
-  </div>
-
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>

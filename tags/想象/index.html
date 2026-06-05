@@ -1,584 +1,626 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    Tag: 想象 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>标签: 想象 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article class="articles">
+    
+    
+    <h1 class="page-type-title">#&nbsp想象</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2025" class="archive-year">2025</a>
     </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="active">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2025/03/18/my-29/" class="archive-article-date">
+  <time datetime="2025-03-18T15:07:20.000Z" itemprop="datePublished">03/18</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2025/03/18/my-29/"
+    >致二十九</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
     </div>
-  </nav>
-</header>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/11/30/yanan-road/" class="archive-article-date">
+  <time datetime="2020-11-30T13:21:08.000Z" itemprop="datePublished">11/30</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/11/30/yanan-road/"
+    >延安路高架</a> 
+</h2>
+ 
 
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
+    </header>
+    
     
       
-      
-        <a href="/">首页</a>
-      
-    
-      
-      
-        <a href="/archives">归档</a>
-      
-    
-      
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%AF%E5%8F%91/" rel="tag">启发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%9E%E5%BF%86/" rel="tag">回忆</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li></ul>
+
     
   </div>
-</div>
-
-  <main class="main">
-    <div class="container">
+</article>
+      
   
-    <header class="page-header">
-  <div class="breadcrumbs">
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/03/18/my-24/" class="archive-article-date">
+  <time datetime="2020-03-18T04:35:20.000Z" itemprop="datePublished">03/18</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/03/18/my-24/"
+    >致二十四</a> 
+</h2>
+ 
+
+    </header>
+    
     
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%98%85%E8%AF%BB/" rel="tag">阅读</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2019" class="archive-year">2019</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/05/30/silk/" class="archive-article-date">
+  <time datetime="2019-05-30T13:34:22.000Z" itemprop="datePublished">05/30</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2019/05/30/silk/"
+    >丝</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%AF%E5%8F%91/" rel="tag">启发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2018" class="archive-year">2018</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2018/08/01/if-nothing/" class="archive-article-date">
+  <time datetime="2018-08-01T04:40:02.000Z" itemprop="datePublished">08/01</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2018/08/01/if-nothing/"
+    >如果有一天我一无所有</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E5%91%BD/" rel="tag">生命</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2017" class="archive-year">2017</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/05/23/looking-for-meaning/" class="archive-article-date">
+  <time datetime="2017-05-23T06:44:44.000Z" itemprop="datePublished">05/23</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2017/05/23/looking-for-meaning/"
+    >寻找意义</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%AF%E5%8F%91/" rel="tag">启发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/04/20/sleepy-class/" class="archive-article-date">
+  <time datetime="2017-04-20T11:44:52.000Z" itemprop="datePublished">04/20</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2017/04/20/sleepy-class/"
+    >睡眠与上课</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li></ul>
+
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2016" class="archive-year">2016</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/04/18/kafka/" class="archive-article-date">
+  <time datetime="2016-04-17T16:10:14.000Z" itemprop="datePublished">04/18</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2016/04/18/kafka/"
+    >卡夫卡的布拉格</a> 
+</h2>
+ 
+
+    </header>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%83%B3%E8%B1%A1/" rel="tag">想象</a></li></ul>
+
+    
+  </div>
+</article>
+      
+      
+    </div>
+  </div>
+  
+  
+
+  
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
         
-        <a href="/">首页</a>
-      
-        <span class="crumb-separator">/</span>
-        <a href="/tags/">标签</a>
-      
-    
-  </div>
-  
-    <h1>想象</h1>
-  
-</header>
-
-  
-  <div class="post-list">
-  
-  
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">致二十九</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>如果问我有没有阶段性的计划，那其目标单位将会是五年。在此基础上，把时间做切割，那我过去的生活就成为了几段极为不一样的片段。在这个特殊的时间点上，这一年即是这个新的节点。总是有人问我对于即将要三十岁作何感想，那我希望未来几年和这几年不要有太大的差别，我挺满意现在的状态的。
-但生活总是充满了变化，五年前写下「致二十四」的时候，字里行间总是透露着意气风发，那时候就像是初窥世界的雏鹰，对一切事物都感到好奇，都愿意尝试，不断尝试理解这个世界。我很高兴那一年的变化，那些变化最终导向了现在的我，在众多平行时间线里，我正体验着的一种。这期间的每一个月每一天都没有什么巨大的变故，但把它们累积起来，以五年的时间跨...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2025-03-18</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2025/03/18/my-29/" aria-label="阅读文章：致二十九"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">延安路高架</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>延安路高架桥横贯整片浦西，连接着外滩与虹桥，它是上海最核心的交通要道。
-如果你路过其中最复杂的一段延安高架立交桥，你一定能注意到那根特别的、被铜质龙纹浮雕包裹着的立柱，它位于延安高架与南北高架的交汇处，每次高速驶过时我总难以好好看清楚那立体的复杂结构，从小便是如此。“开慢点”，“这个龙柱是干嘛的？”我总是对这里充满好奇；如今我也总是把这里的故事讲给同行的人或是读到这里的你。
-上世纪九十年代中，也就是我出生的那年，内环建成以后，上海市中心需要一条横贯东西与一条横贯南北的高架来与内环形成一个便捷的申字高架交通结构。当工程进行到关键的东西高架与南北高架交叉联接的接口时，作为高架路主柱的基础地桩怎么也...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-11-30</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/11/30/yanan-road/" aria-label="阅读文章：延安路高架"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">致二十四</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>曾不止一次对身边的人说过，二十四着实是最好的年纪。少了些年少气盛与轻浮，却依旧充斥着少年的好奇与激情；多了丝成人的老练与世故，却不至于透露出圆滑和油腻。不过我对身边的人说起的时候就变成了，二十四岁的我们下可与十八岁打成一片，上可与三十岁谈天说地；我们在试着探索这个世界，这个世界也在试着接纳我们。
-二十四时，我体会到了更多的人情世故。从长辈得重病的春天开始，家里的气氛就变得微妙起来，长辈们变得更爱抱怨了，“应该这样”，“要是那样就好了”，“这下好了”。虽不像尤金·奥尼尔的《进入黑夜的漫长过程》「附1」 里描绘的那样让人感到如此沉重与挣扎，但我似乎也能稍许理解那其中的内核了。接着，我变得害怕问起病...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-03-18</span>&nbsp;·&nbsp;4 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/03/18/my-24/" aria-label="阅读文章：致二十四"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">丝</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>在这个季节里，除去下雨天，每天下午四五点，阳光总是准时穿过玻璃窗跃入那属于我的小小房间里，空旷的房间变得丰富又明亮。这情景让我看得有些呆滞，似乎好久没有这么毫无顾虑地简单过上一天了。
-有时候午睡变成了一件有着罪恶感的事情，在赶紧起来的理性和再睡一会的贪婪中犹豫着是一种痛苦却又令人满足的情形。
-在长达一刻钟的犹豫后，我拖着有一些沉重的脑袋和身体离开了那张铺满了阳光的柔软的床，然后漱了口，喝了水，又仿佛是新的一天似的。
-日照时间从朦胧的睡梦里一直持续到晚餐后，迎面的风让人不再觉得冷，天空变得清澈云层变得清晰，我把这个时节称之为“初夏”。
-闲来无事决定整理一下房间，偶然翻出了一些高中时代的东西，我总...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2019-05-30</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2019/05/30/silk/" aria-label="阅读文章：丝"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">如果有一天我一无所有</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>偌大的房间，四面是没有任何装饰物的白墙，这里没有门，也没有窗，我一丝不挂地站在中央。此时我在思考的事情已不再重要，没有倾听者。我紧闭双眼，试图感受任何来自外面的声响。这里很空旷，仿佛只身一人漂浮在连氧气的没有的外太空里。一片寂静中，便寻不着时间流逝的痕迹了……
-不知过了多久，在那张令人无比熟悉的床上，带着留恋与不舍，我醒来了。迫不及待地拿起身边的手机记录下这样奇妙的感觉，深怕一翻身便忘了。
-在这种炎热的天气，却出现了感冒的症状，实在是令人哭笑不得。权衡再三，关了空调，决定早些起床。
-小时候看过一本蓝色封面的书，书里以一个小孩的口吻讲述了他出意外走后，灵魂回到人间向周围人告别的故事；他看到了自己...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2018-08-01</span>&nbsp;·&nbsp;4 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2018/08/01/if-nothing/" aria-label="阅读文章：如果有一天我一无所有"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">寻找意义</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>街角不断有人从地下通过地铁口走出来，分散在本来就已是浩浩荡荡的人群里，离去。但也只有在这种时候，才真正感受到自己属于这个城市。
-此时我开始思考一种叫做意义的东西。
-喜欢去海边，海浪规律的声音，让人静静享受那份辽阔。这种时候，人会告诉自己已完全脱离了生活的城市，即使这是那么的短暂。
-人总是被各种理由困在自己熟悉的城市里，寥寥无几的假期，精疲力尽的身体，我相信这才是大多数的那部分。以前很难想象书里描述的那些一辈子没离开过自己生活过地方的那些人，现在似乎可以理解上那么一点了。他们在追求一个意义，一个出门离开的意义，也许穷极一生都没有找到那个意义。其实这和喝酒一样，只需要一个意义便可以开始，相聚或分离...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2017-05-23</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2017/05/23/looking-for-meaning/" aria-label="阅读文章：寻找意义"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">睡眠与上课</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>不知道有没有人和我一样，在做一件事情的时候常常闪过我为什么要这么做这样的念头，更甚会思考这件事本身的意义。
-从最近一门课开始说起，教授对我们说这最后一周上课的内容并不会出现在考试了，只是作为一个补充罢了，于是这样念头又涌现出来。我当然不是觉得我们学的东西是为了考试，让我产生疑问的是，每次学会或者学习到新的东西，如果明明知道这件事可能永远也不会用上，至少五年里十年里，甚至更长的时间里都不会被提起，那么如果我了解他了，意义又在哪里。（当然这只是个极端的情况，我上的课不是这样。）那意义在哪呢？如果是因为兴趣，那么当我今后遇到这件事时，即使我不知道，我也会竭尽所能去了解它，那意义难道是省了时间吗？可是...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2017-04-20</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2017/04/20/sleepy-class/" aria-label="阅读文章：睡眠与上课"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">卡夫卡的布拉格</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>一直有个欧洲梦，幻想住在一个出门就是欧式建筑环绕的广场，慵懒的鸽子，不断的喷泉，恬静的人群。屋子可以不用很大，足够两个人生活就行，周末可以在亮堂堂的窗边写写书看看报纸，桌上的奶茶，午后的花香。屋外没几条街是周末人群的熙攘，但这里有着绝对的安静。
-去广场的一路上有花店，花店里的小伙子每天用新鲜的花朵布置着这家店，门口的玫瑰花束，吸引着来往的居民。花店的旁边有一家书店，虽然不大却可以在里面找到几乎所有喜欢的书，翻开展新的封面，会闻到油墨的芳香。对面有家酒吧，和里面的酒保是无话不谈的朋友，他给我一杯放了冰块的威士忌，我用我最特别的见闻与他交换。之后还有家餐厅，午餐过后还可以坐在里面喝杯咖啡，老板知道...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2016-04-18</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2016/04/18/kafka/" aria-label="阅读文章：卡夫卡的布拉格"></a>
-</article>
-
-  
-</div>
-
-  <div class="border-t border-[--c-40]">
-
-</div>
-
-</div>
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
         
         
-            
-            
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
         
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
         
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
+      </li>
+    </ul>
   </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
-</div>
-<!-- End Busuanzi Analytics -->
-
-
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
-  </div>
-
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>

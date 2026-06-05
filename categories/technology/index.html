@@ -1,681 +1,690 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
+
+<html lang="zh-CN" >
+
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+    
+  <meta name="description" content="Personal Blog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>
+    关于科技 |  旅·人
+  </title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+  
+  
+  <link rel="shortcut icon" href="/lr.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
 
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ga('create', 'UA-163180635-1', 'auto');
+ga('send', 'pageview');
 
-  <meta name="author" content="Jason Yan">
-
-
-  <meta name="subtitle" content="Blog">
-
-
-  <meta name="description" content="Personal Blog">
-
-
-
-<title>目录: 关于科技 | 旅·人</title>
-
-
-
-<link rel="icon" href="/images/lvren.svg">
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/css/search.css">
-
-
-
-<script src="/lib/jquery.min.js"></script>
-
-
-<script src="/lib/iconify-icon.min.js"></script>
-
-
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-  };
-</script>
-
-<script>
-  (function () {
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-    if (setting === "dark" || (prefersDark && setting !== "light"))
-      document.documentElement.classList.toggle("dark", true);
-    let isDark = document.documentElement.classList.contains("dark");
-  })();
-
-  $(document).ready(function () {
-    // init icon
-    const prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const isDark = document.documentElement.classList.contains("dark");
-    $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-
-    function toggleGiscusTheme() {
-      const isDark = document.documentElement.classList.contains("dark");
-      const giscusFrame = document.querySelector("iframe.giscus-frame");
-      if (giscusFrame) {
-        giscusFrame.contentWindow.postMessage(
-          {
-            giscus: {
-              setConfig: {
-                theme: isDark ? "dark" : "light",
-              },
-            },
-          },
-          "https://giscus.app"
-        );
-      }
-    }
-
-
-    // toggle dark mode
-    function toggleDark() {
-      let isDark = document.documentElement.classList.contains("dark");
-      const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-      isDark = !isDark;
-      document.documentElement.classList.toggle("dark", isDark);
-      $("#theme-icon").attr("icon", isDark ? "ic:round-dark-mode" : "ic:round-light-mode");
-      if (prefersDark === isDark) {
-        localStorage.setItem("hexo-color-scheme", "auto");
-      } else {
-        localStorage.setItem("hexo-color-scheme", isDark ? "dark" : "light");
-      }
-      toggleGiscusTheme();
-    }
-    $("#theme-toggle, #toggle-dark").click(toggleDark);
-
-    // listen dark mode change
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        const setting = localStorage.getItem("hexo-color-scheme") || "auto";
-        if (setting === "auto") {
-          document.documentElement.classList.toggle("dark", e.matches);
-          $("#theme-icon").attr(
-            "icon",
-            e.matches ? "ic:round-dark-mode" : "ic:round-light-mode"
-          );
-          toggleGiscusTheme();
-        }
-      });
-  });
 </script>
 
 
 
+  
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="旅·人" type="application/atom+xml">
 </head>
-<body 
-  class="
-    bg-[var(--c-0)]
-    text-[var(--c-80)]
-  ">
-  <header class="site-header">
-  <nav class="nav">
-    <div class="logo">
-      <a href="/" title="旅·人">旅·人</a>
+
+</html>
+
+<body>
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article class="articles">
+    
+    
+    <h1 class="page-type-title">关于科技</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2026" class="archive-year">2026</a>
     </div>
-    <div class="nav-right">
-      <ul id="menu">
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/" title="首页">
-              <span class="">首页</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/archives" title="归档">
-              <span class="">归档</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/about" title="关于">
-              <span class="">关于</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/categories" title="分类">
-              <span class="active">分类</span>
-            </a>
-          </li>
-        
-          
-          
-            
-            
-          
-          
-          <li>
-            <a href="/tags" title="标签">
-              <span class="">标签</span>
-            </a>
-          </li>
-        
-      </ul>
-      <button id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
-        <iconify-icon id="theme-icon" width="18" icon="ic:round-light-mode"></iconify-icon>
-      </button>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
-        <iconify-icon width="18" icon="mingcute:menu-line"></iconify-icon>
-      </button>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2026/01/05/my-subscription-2025/" class="archive-article-date">
+  <time datetime="2026-01-05T05:33:55.000Z" itemprop="datePublished">01/05</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2026/01/05/my-subscription-2025/"
+    >年末特辑-我的年度订阅2025</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2025" class="archive-year">2025</a>
     </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2025/09/30/iphone-17/" class="archive-article-date">
+  <time datetime="2025-09-30T14:30:30.000Z" itemprop="datePublished">09/30</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2025/09/30/iphone-17/"
+    >今年就不升级手机了吧</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2024" class="archive-year">2024</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2024/09/30/iphone-16/" class="archive-article-date">
+  <time datetime="2024-09-30T14:30:30.000Z" itemprop="datePublished">09/30</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2024/09/30/iphone-16/"
+    >应该是最犹豫的一次升级手机</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2021" class="archive-year">2021</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/11/21/apple-watch-s7/" class="archive-article-date">
+  <time datetime="2021-11-21T13:30:35.000Z" itemprop="datePublished">11/21</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/11/21/apple-watch-s7/"
+    >说说刚换的Apple Watch S7</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/07/22/the-week-of-apple-one/" class="archive-article-date">
+  <time datetime="2021-07-22T13:30:35.000Z" itemprop="datePublished">07/22</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/07/22/the-week-of-apple-one/"
+    >The Week of Apple One</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/04/21/news-app/" class="archive-article-date">
+  <time datetime="2021-04-21T11:38:55.000Z" itemprop="datePublished">04/21</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/04/21/news-app/"
+    >我是如何试图逃出信息孤岛的</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2021/01/18/microsoft-to-do/" class="archive-article-date">
+  <time datetime="2021-01-18T11:43:55.000Z" itemprop="datePublished">01/18</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2021/01/18/microsoft-to-do/"
+    >我又重新开始了使用Microsoft To Do</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+  
+  </div>
+  </div>
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/12/17/subscription-2020/" class="archive-article-date">
+  <time datetime="2020-12-17T05:33:55.000Z" itemprop="datePublished">12/17</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/12/17/subscription-2020/"
+    >我在2020这一年的订阅列表</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/12/07/review-devices/" class="archive-article-date">
+  <time datetime="2020-12-07T09:38:55.000Z" itemprop="datePublished">12/07</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/12/07/review-devices/"
+    >近期数码设备消费心得</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+  
+  
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/12/02/huawei-tv/" class="archive-article-date">
+  <time datetime="2020-12-02T09:02:55.000Z" itemprop="datePublished">12/02</time>
+</a>
+       
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/12/02/huawei-tv/"
+    >华为智慧屏</a> 
+</h2>
+ 
+
+    </header>
+    
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technology/">关于科技</a>
+  </div>
+
+    
+    
+  </div>
+</article>
+      
+      
+    </div>
+  </div>
+  
+  
+
+  
+  <nav class="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/categories/technology/page/2/">2</a><a class="extend next" rel="next" href="/categories/technology/page/2/">下一页</a>
   </nav>
-</header>
-
-<div id="menu-panel" class="mobile-menu-panel sm:hidden">
-  <div id="menu-content" class="mobile-menu-content">
-    
-      
-      
-        <a href="/">首页</a>
-      
-    
-      
-      
-        <a href="/archives">归档</a>
-      
-    
-      
-      
-        <a href="/about">关于</a>
-      
-    
-      
-      
-        <a href="/categories">分类</a>
-      
-    
-      
-      
-        <a href="/tags">标签</a>
-      
-    
-  </div>
-</div>
-
-  <main class="main">
-    <div class="container">
   
-    <header class="page-header">
-  <div class="breadcrumbs">
-    
-      
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>
+        &copy;
+        2014-2026
+        Jason Yan
+      </li>
+      <li>
         
-        <a href="/">首页</a>
-      
-        <span class="crumb-separator">/</span>
-        <a href="/categories/">分类</a>
-      
-    
-  </div>
-  
-    <h1>关于科技</h1>
-  
-</header>
-
-  
-  <div class="post-list">
-  
-  
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">年末特辑-我的年度订阅2025</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>五年前我也做过一次类似的盘点，五年过去，好像很多订阅的内容发生了改变，但也有几个订阅是持续了五年没有中断的。趁着五年这个时间节点，和年末这个特别时间，不如再次来盘点一下我这一年的订阅吧！
-「音乐」Apple Music
-$10.99/月（美区）
-
-无论是和苹果生态的高度绑定，还是美区曲库的丰富程度，都足以让我继续续费 Apple Music。而且作为系统原生应用，没有任何广告和开屏跳转，使用的体验就是丝滑流畅，我也不再需要去纠结音质好不好的问题了，基本上曲库中的歌都是以最高音质呈现。顺便，特斯拉车机上的 Apple Music 遇到了好几次链接失败的问题，后来一查是因为车机上的这个软件是由网页...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2026-01-05</span>&nbsp;·&nbsp;11 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2026/01/05/my-subscription-2025/" aria-label="阅读文章：年末特辑-我的年度订阅2025"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">今年就不升级手机了吧</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>这一年一系列 iPhone 的升级都让人觉得显著，无论是拥有了高刷以后更接近Pro系列的标准版，还是全新的注重轻薄的Air，或者Pro系列时隔多年后完全不一样的背板设计。先且不说这些升级是否都让人满意，但确实感受到了苹果正在发力以弥补这两年因为升级力度小所带来的销量下滑。
-标准版加上Pro加上Air所组成的产品线，让人想起了早年的MacBook系列和如今的iPad系列都是以同样的命名方式来设计产品并区别不同的用户人群。经过这么多年的宣传，用户通过命名，大概第一时间对各个产品线都会有一个初步的认知。
-今年的几款机型中，Air无疑是最让我期待的，比起Pro中规中矩的升级，和不太和谐的外观，第一代i...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2025-09-30</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2025/09/30/iphone-17/" aria-label="阅读文章：今年就不升级手机了吧"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">应该是最犹豫的一次升级手机</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>今年换手机应该是目前为止最犹豫的一次，考虑了很久，最终才决定把手上的那台 iPhone 14PM 更新成了最新的一代。
-之前一直是两年更新一次的频率，轮到今年的时候，看完发布会，实在是觉得没有什么新意，几乎没有升级的摄像系统，感知不到变化的外观，大差不差的性能，不禁让我感觉到苹果迟早要完。
-对比15基本上没什么升级，而对比我手上这台14，还是能讲得出几个升级点：
-
-接口换成了 Type-C，这也是我觉得最重要的部分
-长焦变成了5倍潜望镜，但失去了3倍镜，这个升级算是有好有坏
-钛合金边框确实减轻了重量，提升了握持手感，这个也算是个有效升级
-提升续航和电池容量，但保证了一天一充，相比之前已经缩水了...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2024-09-30</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2024/09/30/iphone-16/" aria-label="阅读文章：应该是最犹豫的一次升级手机"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">说说刚换的Apple Watch S7</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>回不去的屏幕屏幕是这一代升级的重点，屏幕的升级几乎无法被忽视，只要你换一个相对全屏的表盘以后，那种极窄边框带来的视觉冲击是强烈的。相比之下，隔壁的S5立马就显得像是上个时代的设计了。上次从初代换到S5的时候最直接的感知也是屏幕，也是回不去了的屏幕。Apple Watch这个系列的升级十分有规律可循，在屏幕方面，S1-S3是最初的方形屏幕，接着S4-S6升级到了全面屏，如果按照这样的规律，可以预见的是屏幕这个方面，S7的极窄边框设计应该会持续三代，也就是S7-S9。
-快速充电的必要性快速充电是一种虽然不常用，但是一旦有需求，就非常关键的功能。这一代支持更高速的充电以后明显感觉到偶尔在洗澡的过程中...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-11-21</span>&nbsp;·&nbsp;3 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/11/21/apple-watch-s7/" aria-label="阅读文章：说说刚换的Apple Watch S7"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">The Week of Apple One</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>自从上周凑齐了6个人的family plan以后，5刀每月的Apple One使用正式开始，其中有我一直在用的Music、iCloud和TV+，也有曾经试用过的New+，剩下的Fitness+和Arcade则是从来没有接触过的，今天来说说我的使用体验心得。
-iCloud我把用了最久的iCloud放在最前面说，在国区账号的iCloud也是一个family plan，所以目前就还是把资料都存在国区没有迁移，但是使用上毫无影响也感觉不出来。暂时不做迁移的还有一个原因是在国内使用时担心速度会变慢，虽然大多数都和我说几乎感觉不出来。
-不知道有多少人现在已经被iCloud绑定了，无感的相册照片存储，各个设...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-07-22</span>&nbsp;·&nbsp;6 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/07/22/the-week-of-apple-one/" aria-label="阅读文章：The Week of Apple One"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry has-cover">
-  
-    <div class="entry-cover">
-      <img loading="lazy" src="/images/IMG_0167.jpg" alt="我是如何试图逃出信息孤岛的">
-    </div>
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">我是如何试图逃出信息孤岛的</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>在这个信息爆炸的时代，我相信很多人和我一样，会过滤掉大量自己不感兴趣的信息。又因为各种软件内越来越精确的分类推送，导致我们收到信息虽然越来越多，但也变得越来越单一。
-我大概是回国以后才开始更高频地使用B站，主要是来替代原来YouTube上那些中文up，大概没几个月，我主页都上的视频就都变成了我关注的那些人同类型的推荐。其他软件如知乎、微博等也是如此，你越是使用，它们似乎就越了解你，那些不知从哪里冒出来的推荐总能吸引你的注意，然后消耗掉你为数不多的碎片时间。
-这件事细想就让我开始后怕了。随着时间的推移，当各类软件都知道了你的喜好，并且针对你的喜好、你关注的类型和领域，来精准推送你想看的东西。所以...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-04-21</span>&nbsp;·&nbsp;7 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/04/21/news-app/" aria-label="阅读文章：我是如何试图逃出信息孤岛的"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">我又重新开始了使用Microsoft To Do</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>自从用了iOS14以后，我重新回到了系统自带任务app的怀抱，因为它最早支持小组件，并且更新以后增加了任务步骤功能，强化了分组功能等，以及解决了我之前的使用痛点，和第三方软件相比，对于我来说已经没有太多差别。再加上苹果生态内系统集成的优势，让我基本上又把任务管理需求转移到了这个系统自带的app中。
-于是最近在使用中又出现了比较烦心的问题，首先最主要的问题就是因为工作机是Windows，这款iOS自带的任务软件变得很不方便，唯一在工作时使用的方法是访问iCloud官网来查看自己的任务，要么就是继续拿自己的手机编辑，这两种方式都不是很方便，本来简单的添加任务-完成任务-打勾这套流程要拿起手机并进入...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2021-01-18</span>&nbsp;·&nbsp;1 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2021/01/18/microsoft-to-do/" aria-label="阅读文章：我又重新开始了使用Microsoft To Do"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">我在2020这一年的订阅列表</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>在这个年底的时候，我决定来盘点一下我这一年使用的付费订阅服务，并且算一算我一共花了多少钱在这上面，快跟我一起来看看吧。
-效率Evernote
-¥198/年（中国区专业版）
-付费特色
-同步不限设备数量
-开放所有新功能
-每个月20G的上传流量和无限的cloud
-500个独立的work spaces且每个space可容500人
-离线笔记
-
-
-印象笔记我算是订阅了很多年了，在一年半以前从美区用官方的迁移助手换到了国区账号。因为国区确实便宜，差价达到了3倍，再加上国区常有的半价活动，差价能达到5倍左右。还有自从中国区的印象笔记独立出来之后，整个团队明显做了很多积极正面的改动。比如在之前加入的合作空间功能...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-12-17</span>&nbsp;·&nbsp;15 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/12/17/subscription-2020/" aria-label="阅读文章：我在2020这一年的订阅列表"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">近期数码设备消费心得</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>今年真的是令人破费的一年，其实这篇文章应该叫做「近期消费心得之为什么我不买PS5与M1 MacBook？因为没钱」。不过除了没钱之外还是有一些心得的，希望它们能给你带来一些建议。
-
-手机
-
-首先赶上了两年一次的换手机周期，更新了手上的iPhone，毫无疑问，我拿到新手机以后迅速嫌弃了原来的手机，现阶段顶级的相机系统、更大的屏幕、更大的内存与容量、新的外观与MagSafe、当然还有拿着新手机的满足感，都让我觉得这次升级依旧是物超所值。当然老的手机代替了更老的7P成为了我新的备用机，依旧流畅好用，应付自如。
-
-平板
-
-其次今年我更新了iPad Pro，其实自从2018年推出全面屏的iPad以来我就...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-12-07</span>&nbsp;·&nbsp;4 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/12/07/review-devices/" aria-label="阅读文章：近期数码设备消费心得"></a>
-</article>
-
-  
-    
-    
-<article class="post-entry">
-  
-  <div class="entry-content-container">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">华为智慧屏</h2>
-    </header>
-    
-      <div class="entry-content no-mathjax">
-        <p>华为智慧屏是我今年回国以后买的最值的产品了。双十一期间，它仅售3499的价格打动了我。
-
-硬件指数首先它55寸、真4k、HDR一个都没少，硬件方面在同价位里的确是最好的那一类。它的音响效果也是优秀的，并且设计合理，虽然不如索尼的全屏幕发声技术，但是整个电视由一块屏幕再加上屏幕正下方一条长的soundbar组成，这个设计本身在同价位的电视里是最出彩的，也是质感最好的。我跑了很多能够体验到电视的店，比如小米体验店、索尼体验店，唯有在华为体验店看到它的时候让我眼前一眼，这也是我最初种草的原因。
-
-开机广告在隔离期间我就在挑选电视上花了不少功夫，在硬件达标的情况下，我还会比较一些比较细节的地方，比如华...</p>
-      </div>
-    
-    <footer class="entry-footer">
-      <span>2020-12-02</span>&nbsp;·&nbsp;2 分钟
-    </footer>
-  </div>
-  <a class="entry-link" href="/2020/12/02/huawei-tv/" aria-label="阅读文章：华为智慧屏"></a>
-</article>
-
-  
-</div>
-
-  <div class="border-t border-[--c-40]">
-
-  <!-- <nav class="pagination"> -->
-  <div class="flex flex-row justify-center px-24 max-w-prose mx-auto py-4">
-
-     
-        <div class="opacity-20 rounded-md text-center shadow-md flex flex-row border-1 items-center justify-center pr-4 pl-2">
-          <iconify-icon width="20" icon="mingcute:left-fill" data-inline="false">
-          </iconify-icon>
-          Prev
-        </div>
-        
-      <div class="flex flex-grow text-center justify-center">
-        <div class="border-2 text-xl font-bold opacity-70 w-fit px-2 rounded-lg">
-          <p>1</p>
-        </div>
-      </div>
-      
-          <a class="hover:bg-gray-100 rounded-md text-center justify-center border-1 shadow-md flex flex-row items-center pl-4 pr-2" href="/categories/technology/page/2/">
-            Next
-            <iconify-icon width="20" icon="mingcute:right-fill" data-inline="false">Next!</iconify-icon>
-          </a>
-        
-      </div>
-      <!-- <span class="page-number current">1</span><a class="page-number" href="/categories/technology/page/2/">2</a> -->
-  <!-- </nav> -->
-  
-</div>
-
-</div>
-
-  </main>
-  <footer class="flex flex-col mt-18 mb-12 items-center
-  text-[var(--c-50)] text-sm">
-  <div class="flex flex-row items-center my-12">
-    
-    
+      </li>
+    </ul>
+    <ul class="list-inline">
+      <li>
         
         
-            
-            
+        <span>
+  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
+  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
+</span>
         
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Github" href="https://github.com/jiaqiany/">
-            <iconify-icon width="28" icon="mingcute:github-fill"></iconify-icon>
-        </a>
-    
+      </li>
+      
+      <li>
+        <!-- cnzz统计 -->
         
-        
-            
-            
-        
-        <a class="
-            hover:text-[var(--c-theme)]
-            hover:bg-[var(--c-20)]
-            rounded-lg
-            p-2
-            my-1
-            flex flex-row items-center
-            group" title="Twitter" href="https://www.twitter.com/zactizz/">
-            <iconify-icon width="28" icon="mingcute:social-x-fill"></iconify-icon>
-        </a>
-    
-
+      </li>
+    </ul>
   </div>
-  <!-- busuanzi -->
-  <div class="mb-6">
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Busuanzi Analytics -->
-<div class="flex flex-col items-center mb-2">
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="ic:round-person" width="18"></iconify-icon>
-    <span class="mr-1">访客 Visitors: </span>
-    <span id="busuanzi_value_site_uv"></span>
-  </div>
-  <div class="flex flex-row items-center">
-    <iconify-icon width="16" icon="carbon:view-filled" width="18"></iconify-icon>
-    <span class="mx-1">浏览量 Page Views:</span>
-    <span id="busuanzi_value_site_pv"></span>
-  </div>
-</div>
-<!-- End Busuanzi Analytics -->
-
-
-  </div>
-  <!-- copyright -->
-  <div class="flex flex-row items-center gap-2">
-    <a class="hover:underline"
-      target="_blank"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-    >
-      CC BY-NC-SA 4.0
-    </a>
-    <span>© 2022-2024</span>
-    <a class="hover:underline"
-    href="https://github.com/chen-yingfa" 
-    target="_blank" 
-    rel="noopener noreferrer">陈英发</a>
-  </div>
-  <!-- powered by -->
-  <div class="flex items-center gap-1">
-    <span>Powered by</span>
-    <a class="hover:underline" 
-    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
-    <span>&</span>
-    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
-    class="hover:underline"
-    target="_blank"
-      rel="noopener noreferrer"
-      >
-      枫叶 Fengye
-    </a>
-  </div>
-
 </footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
 
-  <div class="
-    back-to-top
-    fixed right-6
-    z-1024
-    -bottom-20
-    rounded-lg
-    font-bold
-    py-1 px-2
-    text-[var(--c-80)]
-    bg-[var(--c-20)]
-    cursor-pointer
-    text-center
-    drop-shadow-md
-  ">
-    <span class="flex justify-center items-center text-sm">
-      <span id="scrollpercent"><span>0</span> %</span>
-      <iconify-icon width="18" icon="mingcute:arrow-to-up-fill" id="go-top"></iconify-icon>
-    </span>
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/lvren.svg" alt="旅·人"></a>
   </div>
   
-<script src="/js/main.js"></script>
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://mp.weixin.qq.com/s/eTYMpkmsLjgDnYHdtL3tyA" target="_blank" rel="noopener">公众号</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://music.apple.com/us/playlist/5am-shanghai/pl.u-XkD0vNrsgDLxL1" target="_blank" rel="noopener">正在听</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/My-Reading-List-3667d6a9aab44bee83340bcb3d2a3483?pvs=4" target="_blank" rel="noopener">正在读</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://tree-baroness-632.notion.site/541b491f73984618adb753b8c9be14ba?v=a11f463198c3462f96bf5335ecad93b0&pvs=4" target="_blank" rel="noopener">正在玩</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="Mailto:zactiz@hotmail.com">联系我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" id="maple"></div>
+<script src="/js/lazyload.min.js"></script>
+
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['给人一双翅膀，让他飞向远方……', '', ''],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 200,
+      showCursor: true
+    });
+  } catch (err) {
+  }
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+
+
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+
+    
+  </div>
 </body>
 
 </html>
